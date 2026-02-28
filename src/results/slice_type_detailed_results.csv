@@ -1,0 +1,602 @@
+intent,model,expected_slice_type,predicted_slice_type,slice_match,policy_status
+"Create a slice to support video journalists transmitting live footage from a downtown area, allowing up to 40 devices with downstream rates of 120 Mbps per device and a packet delay budget of 15 ms to keep streams smooth.",claude-opus-4-5,eMBB,eMBB,True,Policy created successfully
+"Provision a slice for a university campus event where attendees will upload and stream media, targeting uplink rates of 50 Mbps per device and downstream rates of 100 Mbps with latency capped at 20 ms.",claude-opus-4-5,eMBB,eMBB,True,Policy created successfully
+"Set up a slice for a shopping mall to improve customer mobile experience, supporting 300 devices with downstream speeds of 80 Mbps per device and a packet delay budget of 25 ms.",claude-opus-4-5,eMBB,eMBB,True,Policy created successfully
+"Deploy a slice for a media production crew using AR headsets, requiring downstream throughput of 300 Mbps per device and latency not exceeding 10 ms.",claude-opus-4-5,eMBB,eMBB,True,Policy created successfully
+"Establish a slice for commuters in a busy train station, optimized for high-capacity browsing with support for 500 devices and downstream rates of 60 Mbps per device.",claude-opus-4-5,eMBB,eMBB,True,Policy created successfully
+"Create a slice for a sports arena during live matches, prioritizing user experience with 150 Mbps downstream per device and packet delay budget of 15 ms.",claude-opus-4-5,eMBB,eMBB,True,Policy created successfully
+"Provision a slice for an outdoor music festival where attendees share video clips, allowing up to 800 devices with uplink rates of 40 Mbps per device.",claude-opus-4-5,eMBB,eMBB,True,Policy created successfully
+"Design a slice for a business district to support cloud-based applications, targeting 100 Mbps downstream per device and latency around 20 ms.",claude-opus-4-5,eMBB,eMBB,True,Policy created successfully
+"Deploy a slice for a convention center hosting tech demos, supporting 200 devices with 200 Mbps downstream rates and packet delay budget of 10 ms.",claude-opus-4-5,eMBB,eMBB,True,Policy created successfully
+"Create a slice to enhance mobile broadband along a highway corridor, ensuring downstream speeds of 90 Mbps per device and latency below 30 ms.",claude-opus-4-5,eMBB,eMBB,True,Policy created successfully
+"Provision a slice for a public square with heavy social media usage, supporting 600 devices and uplink rates of 35 Mbps per device.",claude-opus-4-5,eMBB,eMBB,True,Policy created successfully
+"Establish a slice for corporate offices using cloud desktops, with 120 Mbps downstream per device and packet delay budget of 15 ms.",claude-opus-4-5,eMBB,eMBB,True,Policy created successfully
+"Set up a slice for remote training sessions using VR, requiring 500 Mbps downstream per device and latency capped at 8 ms.",claude-opus-4-5,eMBB,eMBB,True,Policy created successfully
+"Create a slice for a harbor area supporting logistics staff tablets, allowing 150 devices with downstream rates of 70 Mbps.",claude-opus-4-5,eMBB,eMBB,True,Policy created successfully
+"Deploy a slice for tourists in a historical district, optimized for media consumption with 80 Mbps downstream per device and 25 ms latency.",claude-opus-4-5,eMBB,eMBB,True,Policy created successfully
+"Provision a slice for a TV broadcast van zone, prioritizing uplink capacity of 200 Mbps per device and packet delay budget of 12 ms.",claude-opus-4-5,eMBB,eMBB,True,Policy created successfully
+"Establish a slice for co-working spaces, supporting 250 devices with downstream speeds of 100 Mbps per device.",claude-opus-4-5,eMBB,eMBB,True,Policy created successfully
+"Create a slice for a retail analytics platform using video feeds, requiring 150 Mbps downstream and latency below 20 ms.",claude-opus-4-5,eMBB,eMBB,True,Policy created successfully
+"Deploy a slice for mobile gaming users in a city park, targeting 120 Mbps downstream per device and 10 ms latency.",claude-opus-4-5,eMBB,eMBB,True,Policy created successfully
+"Provision a slice for financial traders on the move, with 90 Mbps downstream per device and packet delay budget of 10 ms.",claude-opus-4-5,eMBB,eMBB,True,Policy created successfully
+"Create a slice to control autonomous delivery robots in an industrial zone, requiring packet delay budget of 3 ms and uplink rates of 20 Mbps per device.",claude-opus-4-5,uRRLC,uRRLC,True,Policy created successfully
+"Provision a slice for drone traffic management, supporting 60 devices with latency capped at 5 ms and downstream rates of 30 Mbps.",claude-opus-4-5,uRRLC,uRRLC,True,Policy created successfully
+"Establish a slice for automated guided vehicles in a factory, prioritizing ultra-low latency of 2 ms and uplink throughput of 25 Mbps.",claude-opus-4-5,uRRLC,uRRLC,True,Policy created successfully
+"Deploy a slice for remote crane operation at a port, requiring 1 ms packet delay budget and 50 Mbps downstream per device.",claude-opus-4-5,uRRLC,uRRLC,True,Policy created successfully
+"Create a slice for railway signaling systems, supporting 120 devices with latency not exceeding 4 ms.",claude-opus-4-5,uRRLC,uRRLC,True,Policy created successfully
+"Provision a slice for emergency response vehicle coordination, targeting uplink rates of 40 Mbps and latency under 5 ms.",claude-opus-4-5,uRRLC,uRRLC,True,Policy created successfully
+"Establish a slice for robotic assembly lines, requiring downstream rates of 60 Mbps per device and packet delay budget of 3 ms.",claude-opus-4-5,uRRLC,uRRLC,True,Policy created successfully
+"Deploy a slice for power grid protection relays, supporting 300 devices with latency capped at 4 ms.",claude-opus-4-5,uRRLC,uRRLC,True,Policy created successfully
+"Create a slice for autonomous bus control systems, allowing 80 devices with latency below 5 ms and uplink rates of 30 Mbps.",claude-opus-4-5,uRRLC,uRRLC,True,Policy created successfully
+"Provision a slice for real-time traffic light coordination, requiring 10 Mbps uplink per device and packet delay budget of 6 ms.",claude-opus-4-5,uRRLC,uRRLC,True,Policy created successfully
+"Establish a slice for remote medical equipment monitoring, prioritizing latency of 5 ms and downstream rates of 25 Mbps.",claude-opus-4-5,uRRLC,uRRLC,True,Policy created successfully
+"Deploy a slice for collaborative industrial robots, supporting 50 devices with latency capped at 2 ms.",claude-opus-4-5,uRRLC,uRRLC,True,Policy created successfully
+"Create a slice for precision agriculture machinery control, requiring uplink rates of 20 Mbps and packet delay budget of 7 ms.",claude-opus-4-5,uRRLC,uRRLC,True,Policy created successfully
+"Provision a slice for automated warehouse sorting systems, allowing 150 devices with latency under 5 ms.",claude-opus-4-5,uRRLC,uRRLC,True,Policy created successfully
+"Establish a slice for tunnel safety systems, supporting 400 devices with latency capped at 6 ms.",claude-opus-4-5,uRRLC,uRRLC,True,Policy created successfully
+"Deploy a slice for real-time video feedback in remote inspections, requiring 80 Mbps downstream per device and latency of 5 ms.",claude-opus-4-5,uRRLC,uRRLC,True,Policy created successfully
+"Create a slice for autonomous mining vehicles, allowing 70 devices with packet delay budget of 4 ms.",claude-opus-4-5,uRRLC,uRRLC,True,Policy created successfully
+"Provision a slice for industrial motion control networks, requiring latency not exceeding 2 ms and uplink rates of 15 Mbps.",claude-opus-4-5,uRRLC,uRRLC,True,Policy created successfully
+"Establish a slice for airport ground vehicle coordination, supporting 200 devices with latency capped at 5 ms.",claude-opus-4-5,uRRLC,uRRLC,True,Policy created successfully
+"Deploy a slice for remote surgery assistance systems, requiring downstream rates of 1 Gbps per device and packet delay budget of 1 ms.",claude-opus-4-5,uRRLC,uRRLC,True,Policy created successfully
+"Create a slice for environmental sensors monitoring air quality across a city district, supporting up to 3000 devices with uplink rates of 1 Mbps per device.",claude-opus-4-5,mMTC,mMTC,True,Policy created successfully
+"Provision a slice for smart parking sensors, allowing 2500 devices with packet delay budget of 100 ms.",claude-opus-4-5,mMTC,mMTC,True,Policy created successfully
+"Establish a slice for utility metering infrastructure, supporting 4000 devices with uplink rates of 500 kbps per device.",claude-opus-4-5,mMTC,mMTC,True,Policy created successfully
+"Deploy a slice for waste management sensors, allowing 1800 devices with latency tolerance of 150 ms.",claude-opus-4-5,mMTC,mMTC,True,Policy created successfully
+"Create a slice for flood monitoring sensors along a river, supporting 1200 devices with uplink rates of 800 kbps.",claude-opus-4-5,mMTC,mMTC,True,Policy created successfully
+"Provision a slice for agricultural soil sensors, allowing 2200 devices with packet delay budget of 200 ms.",claude-opus-4-5,mMTC,mMTC,True,Policy created successfully
+"Establish a slice for street lighting control nodes, supporting 3500 devices with uplink rates of 300 kbps.",claude-opus-4-5,mMTC,mMTC,True,Policy created successfully
+"Deploy a slice for weather stations in rural areas, allowing 900 devices with latency tolerance of 250 ms.",claude-opus-4-5,mMTC,mMTC,True,Policy created successfully
+"Create a slice for industrial condition monitoring sensors, supporting 1600 devices with uplink rates of 1 Mbps.",claude-opus-4-5,mMTC,mMTC,True,Policy created successfully
+"Provision a slice for smart water distribution sensors, allowing 2800 devices with packet delay budget of 120 ms.",claude-opus-4-5,mMTC,mMTC,True,Policy created successfully
+"Establish a slice for noise pollution monitoring units, supporting 1400 devices with uplink rates of 600 kbps.",claude-opus-4-5,mMTC,mMTC,True,Policy created successfully
+"Deploy a slice for pipeline pressure sensors, allowing 2000 devices with latency tolerance of 180 ms.",claude-opus-4-5,mMTC,mMTC,True,Policy created successfully
+"Create a slice for smart agriculture weather probes, supporting 1100 devices with uplink rates of 700 kbps.",claude-opus-4-5,mMTC,mMTC,True,Policy created successfully
+"Provision a slice for building management sensors in commercial zones, allowing 3200 devices with packet delay budget of 100 ms.",claude-opus-4-5,mMTC,mMTC,True,Policy created successfully
+"Establish a slice for public transportation telemetry sensors, supporting 1700 devices with uplink rates of 900 kbps.",claude-opus-4-5,mMTC,mMTC,True,Policy created successfully
+"Deploy a slice for smart irrigation controllers, allowing 2600 devices with latency tolerance of 200 ms.",claude-opus-4-5,mMTC,mMTC,True,Policy created successfully
+"Create a slice for cold-chain temperature sensors, supporting 1500 devices with uplink rates of 500 kbps.",claude-opus-4-5,mMTC,mMTC,True,Policy created successfully
+"Provision a slice for structural health monitoring sensors on bridges, allowing 800 devices with packet delay budget of 150 ms.",claude-opus-4-5,mMTC,mMTC,True,Policy created successfully
+"Establish a slice for city-wide asset tracking tags, supporting 4200 devices with uplink rates of 400 kbps.",claude-opus-4-5,mMTC,mMTC,True,Policy created successfully
+"Deploy a slice for smart recycling bin sensors, allowing 2300 devices with latency tolerance of 180 ms.",claude-opus-4-5,mMTC,mMTC,True,Policy created successfully
+"Create a slice for a mobile esports tournament, requiring downstream rates of 250 Mbps per device and packet delay budget of 12 ms.",claude-opus-4-5,eMBB,eMBB,True,Policy created successfully
+"Provision a slice for film editors working remotely on-site, allowing 60 devices with 400 Mbps downstream per device.",claude-opus-4-5,eMBB,eMBB,True,Policy created successfully
+"Establish a slice for city surveillance analysts reviewing HD feeds, requiring 200 Mbps downstream and latency under 20 ms.",claude-opus-4-5,eMBB,eMBB,True,Policy created successfully
+"Deploy a slice for interactive advertising screens, supporting 100 devices with downstream rates of 150 Mbps.",claude-opus-4-5,eMBB,eMBB,True,Policy created successfully
+"Create a slice for maritime passenger terminals, prioritizing user experience with 90 Mbps downstream per device.",claude-opus-4-5,eMBB,eMBB,True,Policy created successfully
+"Provision a slice for automated train door control systems, supporting 500 devices with latency capped at 4 ms.",claude-opus-4-5,uRRLC,uRRLC,True,Policy created successfully
+"Establish a slice for robotic firefighting units, requiring uplink rates of 35 Mbps and packet delay budget of 3 ms.",claude-opus-4-5,uRRLC,uRRLC,True,Policy created successfully
+"Deploy a slice for collision avoidance systems at intersections, allowing 600 devices with latency under 5 ms.",claude-opus-4-5,uRRLC,uRRLC,True,Policy created successfully
+"Create a slice for remote heavy machinery diagnostics, requiring downstream rates of 70 Mbps and latency of 6 ms.",claude-opus-4-5,uRRLC,uRRLC,True,Policy created successfully
+"Provision a slice for automated port gate operations, supporting 250 devices with packet delay budget of 4 ms.",claude-opus-4-5,uRRLC,uRRLC,True,Policy created successfully
+"Establish a slice for city bike availability sensors, allowing 3100 devices with uplink rates of 300 kbps.",claude-opus-4-5,mMTC,mMTC,True,Policy created successfully
+"Deploy a slice for smart vending machine telemetry, supporting 1900 devices with latency tolerance of 200 ms.",claude-opus-4-5,mMTC,mMTC,True,Policy created successfully
+"Create a slice for energy consumption sensors in industrial parks, allowing 2700 devices with uplink rates of 800 kbps.",claude-opus-4-5,mMTC,mMTC,True,Policy created successfully
+"Provision a slice for public restroom occupancy sensors, supporting 2100 devices with packet delay budget of 150 ms.",claude-opus-4-5,mMTC,mMTC,True,Policy created successfully
+"Establish a slice for smart bus stop information panels, allowing 1200 devices with uplink rates of 600 kbps.",claude-opus-4-5,mMTC,mMTC,True,Policy created successfully
+"Create a slice for immersive museum AR guides, requiring 180 Mbps downstream per device and latency of 15 ms.",claude-opus-4-5,eMBB,eMBB,True,Policy created successfully
+"Provision a slice for urban telepresence kiosks, allowing 90 devices with downstream rates of 300 Mbps.",claude-opus-4-5,eMBB,eMBB,True,Policy created successfully
+"Establish a slice for real-time map updates for ride-sharing fleets, supporting 400 devices with uplink rates of 45 Mbps.",claude-opus-4-5,eMBB,eMBB,True,Policy created successfully
+"Deploy a slice for live election coverage teams, requiring 250 Mbps uplink per device and packet delay budget of 18 ms.",claude-opus-4-5,eMBB,eMBB,True,Policy created successfully
+"Create a slice for city-wide WiMAX replacement broadband, supporting 700 devices with downstream rates of 85 Mbps.",claude-opus-4-5,eMBB,eMBB,True,Policy created successfully
+"Create a slice for city fountain control sensors, allowing 900 devices with uplink rates of 400 kbps.",claude-opus-4-5,mMTC,mMTC,True,Policy created successfully
+"Create a slice for city-wide WiMAX replacement broadband, supporting 700 devices with downstream rates of 85 Mbps.",claude-opus-4-5,eMBB,eMBB,True,Policy created successfully
+"Provision a slice for synchronized traffic camera control, allowing 350 devices with latency under 6 ms.",claude-opus-4-5,uRRLC,uRRLC,True,Policy created successfully
+"Establish a slice for industrial alarm systems, supporting 900 devices with packet delay budget of 5 ms.",claude-opus-4-5,uRRLC,uRRLC,True,Policy created successfully
+"Deploy a slice for remote vehicle diagnostics in motion, requiring uplink rates of 25 Mbps and latency of 7 ms.",claude-opus-4-5,uRRLC,uRRLC,True,Policy created successfully
+"Create a slice for automated toll gate controls, allowing 450 devices with latency capped at 6 ms.",claude-opus-4-5,uRRLC,uRRLC,True,Policy created successfully
+"Provision a slice for coordinated drone light shows, supporting 500 devices with packet delay budget of 5 ms.",claude-opus-4-5,uRRLC,uRRLC,True,Policy created successfully
+"Establish a slice for environmental radiation sensors, allowing 1000 devices with uplink rates of 700 kbps.",claude-opus-4-5,mMTC,mMTC,True,Policy created successfully
+"Deploy a slice for smart locker systems, supporting 1800 devices with latency tolerance of 150 ms.",claude-opus-4-5,mMTC,mMTC,True,Policy created successfully
+"Provision a slice for coastal erosion monitoring sensors, supporting 1300 devices with packet delay budget of 200 ms.",claude-opus-4-5,mMTC,mMTC,True,Policy created successfully
+"Establish a slice for smart traffic sign telemetry, allowing 2400 devices with uplink rates of 500 kbps.",claude-opus-4-5,mMTC,mMTC,True,Policy created successfully
+"Create a slice for urban drone video inspections, requiring downstream rates of 220 Mbps and latency under 15 ms.",claude-opus-4-5,eMBB,uRRLC,False,Policy created successfully
+"Provision a slice for live online education broadcasting, supporting 300 devices with downstream rates of 140 Mbps.",claude-opus-4-5,eMBB,eMBB,True,Policy created successfully
+"Establish a slice for pop-up business expos, allowing 500 devices with packet delay budget of 25 ms.",claude-opus-4-5,eMBB,eMBB,True,Policy created successfully
+"Deploy a slice for automated rail switch control, supporting 700 devices with latency capped at 4 ms.",claude-opus-4-5,uRRLC,uRRLC,True,Policy created successfully
+"Create a slice for synchronized robotic welding, requiring uplink rates of 30 Mbps and packet delay budget of 2 ms.",claude-opus-4-5,uRRLC,uRRLC,True,Policy created successfully
+"Provision a slice for smart greenhouse climate sensors, allowing 1600 devices with latency tolerance of 180 ms.",claude-opus-4-5,mMTC,mMTC,True,Policy created successfully
+"Establish a slice for public safety siren monitoring, supporting 1100 devices with uplink rates of 600 kbps.",claude-opus-4-5,mMTC,mMTC,True,Policy created successfully
+"Deploy a slice for high-resolution mobile mapping vehicles, requiring 350 Mbps uplink per device and latency of 20 ms.",claude-opus-4-5,eMBB,eMBB,True,Policy created successfully
+"Create a slice for autonomous ferry navigation systems, allowing 90 devices with packet delay budget of 3 ms.",claude-opus-4-5,uRRLC,uRRLC,True,Policy created successfully
+"Provision a slice for smart city soil moisture probes, supporting 2000 devices with uplink rates of 500 kbps.",claude-opus-4-5,mMTC,mMTC,True,Policy created successfully
+"Create a slice to support video journalists transmitting live footage from a downtown area, allowing up to 40 devices with downstream rates of 120 Mbps per device and a packet delay budget of 15 ms to keep streams smooth.",claude-sonnet-4-5,eMBB,eMBB,True,Policy created successfully
+"Provision a slice for a university campus event where attendees will upload and stream media, targeting uplink rates of 50 Mbps per device and downstream rates of 100 Mbps with latency capped at 20 ms.",claude-sonnet-4-5,eMBB,eMBB,True,Policy created successfully
+"Set up a slice for a shopping mall to improve customer mobile experience, supporting 300 devices with downstream speeds of 80 Mbps per device and a packet delay budget of 25 ms.",claude-sonnet-4-5,eMBB,eMBB,True,Policy created successfully
+"Deploy a slice for a media production crew using AR headsets, requiring downstream throughput of 300 Mbps per device and latency not exceeding 10 ms.",claude-sonnet-4-5,eMBB,uRRLC,False,Policy created successfully
+"Establish a slice for commuters in a busy train station, optimized for high-capacity browsing with support for 500 devices and downstream rates of 60 Mbps per device.",claude-sonnet-4-5,eMBB,eMBB,True,Policy created successfully
+"Create a slice for a sports arena during live matches, prioritizing user experience with 150 Mbps downstream per device and packet delay budget of 15 ms.",claude-sonnet-4-5,eMBB,eMBB,True,Policy created successfully
+"Provision a slice for an outdoor music festival where attendees share video clips, allowing up to 800 devices with uplink rates of 40 Mbps per device.",claude-sonnet-4-5,eMBB,eMBB,True,Policy created successfully
+"Design a slice for a business district to support cloud-based applications, targeting 100 Mbps downstream per device and latency around 20 ms.",claude-sonnet-4-5,eMBB,eMBB,True,Policy created successfully
+"Deploy a slice for a convention center hosting tech demos, supporting 200 devices with 200 Mbps downstream rates and packet delay budget of 10 ms.",claude-sonnet-4-5,eMBB,uRRLC,False,Policy created successfully
+"Create a slice to enhance mobile broadband along a highway corridor, ensuring downstream speeds of 90 Mbps per device and latency below 30 ms.",claude-sonnet-4-5,eMBB,eMBB,True,Policy created successfully
+"Provision a slice for a public square with heavy social media usage, supporting 600 devices and uplink rates of 35 Mbps per device.",claude-sonnet-4-5,eMBB,eMBB,True,Policy created successfully
+"Establish a slice for corporate offices using cloud desktops, with 120 Mbps downstream per device and packet delay budget of 15 ms.",claude-sonnet-4-5,eMBB,eMBB,True,Policy created successfully
+"Set up a slice for remote training sessions using VR, requiring 500 Mbps downstream per device and latency capped at 8 ms.",claude-sonnet-4-5,eMBB,uRRLC,False,Policy created successfully
+"Create a slice for a harbor area supporting logistics staff tablets, allowing 150 devices with downstream rates of 70 Mbps.",claude-sonnet-4-5,eMBB,eMBB,True,Policy created successfully
+"Deploy a slice for tourists in a historical district, optimized for media consumption with 80 Mbps downstream per device and 25 ms latency.",claude-sonnet-4-5,eMBB,eMBB,True,Policy created successfully
+"Provision a slice for a TV broadcast van zone, prioritizing uplink capacity of 200 Mbps per device and packet delay budget of 12 ms.",claude-sonnet-4-5,eMBB,uRRLC,False,Policy created successfully
+"Establish a slice for co-working spaces, supporting 250 devices with downstream speeds of 100 Mbps per device.",claude-sonnet-4-5,eMBB,eMBB,True,Policy created successfully
+"Create a slice for a retail analytics platform using video feeds, requiring 150 Mbps downstream and latency below 20 ms.",claude-sonnet-4-5,eMBB,,False,Failed
+"Deploy a slice for mobile gaming users in a city park, targeting 120 Mbps downstream per device and 10 ms latency.",claude-sonnet-4-5,eMBB,,False,Failed
+"Provision a slice for financial traders on the move, with 90 Mbps downstream per device and packet delay budget of 10 ms.",claude-sonnet-4-5,eMBB,,False,Failed
+"Create a slice to control autonomous delivery robots in an industrial zone, requiring packet delay budget of 3 ms and uplink rates of 20 Mbps per device.",claude-sonnet-4-5,uRRLC,,False,Failed
+"Provision a slice for drone traffic management, supporting 60 devices with latency capped at 5 ms and downstream rates of 30 Mbps.",claude-sonnet-4-5,uRRLC,,False,Failed
+"Establish a slice for automated guided vehicles in a factory, prioritizing ultra-low latency of 2 ms and uplink throughput of 25 Mbps.",claude-sonnet-4-5,uRRLC,,False,Failed
+"Deploy a slice for remote crane operation at a port, requiring 1 ms packet delay budget and 50 Mbps downstream per device.",claude-sonnet-4-5,uRRLC,,False,Failed
+"Create a slice for railway signaling systems, supporting 120 devices with latency not exceeding 4 ms.",claude-sonnet-4-5,uRRLC,,False,Failed
+"Provision a slice for emergency response vehicle coordination, targeting uplink rates of 40 Mbps and latency under 5 ms.",claude-sonnet-4-5,uRRLC,,False,Failed
+"Establish a slice for robotic assembly lines, requiring downstream rates of 60 Mbps per device and packet delay budget of 3 ms.",claude-sonnet-4-5,uRRLC,,False,Failed
+"Deploy a slice for power grid protection relays, supporting 300 devices with latency capped at 4 ms.",claude-sonnet-4-5,uRRLC,,False,Failed
+"Create a slice for autonomous bus control systems, allowing 80 devices with latency below 5 ms and uplink rates of 30 Mbps.",claude-sonnet-4-5,uRRLC,,False,Failed
+"Provision a slice for real-time traffic light coordination, requiring 10 Mbps uplink per device and packet delay budget of 6 ms.",claude-sonnet-4-5,uRRLC,,False,Failed
+"Establish a slice for remote medical equipment monitoring, prioritizing latency of 5 ms and downstream rates of 25 Mbps.",claude-sonnet-4-5,uRRLC,,False,Failed
+"Deploy a slice for collaborative industrial robots, supporting 50 devices with latency capped at 2 ms.",claude-sonnet-4-5,uRRLC,,False,Failed
+"Create a slice for precision agriculture machinery control, requiring uplink rates of 20 Mbps and packet delay budget of 7 ms.",claude-sonnet-4-5,uRRLC,,False,Failed
+"Provision a slice for automated warehouse sorting systems, allowing 150 devices with latency under 5 ms.",claude-sonnet-4-5,uRRLC,,False,Failed
+"Establish a slice for tunnel safety systems, supporting 400 devices with latency capped at 6 ms.",claude-sonnet-4-5,uRRLC,,False,Failed
+"Deploy a slice for real-time video feedback in remote inspections, requiring 80 Mbps downstream per device and latency of 5 ms.",claude-sonnet-4-5,uRRLC,,False,Failed
+"Create a slice for autonomous mining vehicles, allowing 70 devices with packet delay budget of 4 ms.",claude-sonnet-4-5,uRRLC,,False,Failed
+"Provision a slice for industrial motion control networks, requiring latency not exceeding 2 ms and uplink rates of 15 Mbps.",claude-sonnet-4-5,uRRLC,,False,Failed
+"Establish a slice for airport ground vehicle coordination, supporting 200 devices with latency capped at 5 ms.",claude-sonnet-4-5,uRRLC,,False,Failed
+"Deploy a slice for remote surgery assistance systems, requiring downstream rates of 1 Gbps per device and packet delay budget of 1 ms.",claude-sonnet-4-5,uRRLC,,False,Failed
+"Create a slice for environmental sensors monitoring air quality across a city district, supporting up to 3000 devices with uplink rates of 1 Mbps per device.",claude-sonnet-4-5,mMTC,,False,Failed
+"Provision a slice for smart parking sensors, allowing 2500 devices with packet delay budget of 100 ms.",claude-sonnet-4-5,mMTC,,False,Failed
+"Establish a slice for utility metering infrastructure, supporting 4000 devices with uplink rates of 500 kbps per device.",claude-sonnet-4-5,mMTC,,False,Failed
+"Deploy a slice for waste management sensors, allowing 1800 devices with latency tolerance of 150 ms.",claude-sonnet-4-5,mMTC,,False,Failed
+"Create a slice for flood monitoring sensors along a river, supporting 1200 devices with uplink rates of 800 kbps.",claude-sonnet-4-5,mMTC,,False,Failed
+"Provision a slice for agricultural soil sensors, allowing 2200 devices with packet delay budget of 200 ms.",claude-sonnet-4-5,mMTC,,False,Failed
+"Establish a slice for street lighting control nodes, supporting 3500 devices with uplink rates of 300 kbps.",claude-sonnet-4-5,mMTC,,False,Failed
+"Deploy a slice for weather stations in rural areas, allowing 900 devices with latency tolerance of 250 ms.",claude-sonnet-4-5,mMTC,,False,Failed
+"Create a slice for industrial condition monitoring sensors, supporting 1600 devices with uplink rates of 1 Mbps.",claude-sonnet-4-5,mMTC,,False,Failed
+"Provision a slice for smart water distribution sensors, allowing 2800 devices with packet delay budget of 120 ms.",claude-sonnet-4-5,mMTC,,False,Failed
+"Establish a slice for noise pollution monitoring units, supporting 1400 devices with uplink rates of 600 kbps.",claude-sonnet-4-5,mMTC,,False,Failed
+"Deploy a slice for pipeline pressure sensors, allowing 2000 devices with latency tolerance of 180 ms.",claude-sonnet-4-5,mMTC,,False,Failed
+"Create a slice for smart agriculture weather probes, supporting 1100 devices with uplink rates of 700 kbps.",claude-sonnet-4-5,mMTC,,False,Failed
+"Provision a slice for building management sensors in commercial zones, allowing 3200 devices with packet delay budget of 100 ms.",claude-sonnet-4-5,mMTC,,False,Failed
+"Establish a slice for public transportation telemetry sensors, supporting 1700 devices with uplink rates of 900 kbps.",claude-sonnet-4-5,mMTC,,False,Failed
+"Deploy a slice for smart irrigation controllers, allowing 2600 devices with latency tolerance of 200 ms.",claude-sonnet-4-5,mMTC,,False,Failed
+"Create a slice for cold-chain temperature sensors, supporting 1500 devices with uplink rates of 500 kbps.",claude-sonnet-4-5,mMTC,,False,Failed
+"Provision a slice for structural health monitoring sensors on bridges, allowing 800 devices with packet delay budget of 150 ms.",claude-sonnet-4-5,mMTC,,False,Failed
+"Establish a slice for city-wide asset tracking tags, supporting 4200 devices with uplink rates of 400 kbps.",claude-sonnet-4-5,mMTC,,False,Failed
+"Deploy a slice for smart recycling bin sensors, allowing 2300 devices with latency tolerance of 180 ms.",claude-sonnet-4-5,mMTC,,False,Failed
+"Create a slice for a mobile esports tournament, requiring downstream rates of 250 Mbps per device and packet delay budget of 12 ms.",claude-sonnet-4-5,eMBB,,False,Failed
+"Provision a slice for film editors working remotely on-site, allowing 60 devices with 400 Mbps downstream per device.",claude-sonnet-4-5,eMBB,,False,Failed
+"Establish a slice for city surveillance analysts reviewing HD feeds, requiring 200 Mbps downstream and latency under 20 ms.",claude-sonnet-4-5,eMBB,,False,Failed
+"Deploy a slice for interactive advertising screens, supporting 100 devices with downstream rates of 150 Mbps.",claude-sonnet-4-5,eMBB,,False,Failed
+"Create a slice for maritime passenger terminals, prioritizing user experience with 90 Mbps downstream per device.",claude-sonnet-4-5,eMBB,,False,Failed
+"Provision a slice for automated train door control systems, supporting 500 devices with latency capped at 4 ms.",claude-sonnet-4-5,uRRLC,,False,Failed
+"Establish a slice for robotic firefighting units, requiring uplink rates of 35 Mbps and packet delay budget of 3 ms.",claude-sonnet-4-5,uRRLC,,False,Failed
+"Deploy a slice for collision avoidance systems at intersections, allowing 600 devices with latency under 5 ms.",claude-sonnet-4-5,uRRLC,,False,Failed
+"Create a slice for remote heavy machinery diagnostics, requiring downstream rates of 70 Mbps and latency of 6 ms.",claude-sonnet-4-5,uRRLC,,False,Failed
+"Provision a slice for automated port gate operations, supporting 250 devices with packet delay budget of 4 ms.",claude-sonnet-4-5,uRRLC,,False,Failed
+"Establish a slice for city bike availability sensors, allowing 3100 devices with uplink rates of 300 kbps.",claude-sonnet-4-5,mMTC,,False,Failed
+"Deploy a slice for smart vending machine telemetry, supporting 1900 devices with latency tolerance of 200 ms.",claude-sonnet-4-5,mMTC,,False,Failed
+"Create a slice for energy consumption sensors in industrial parks, allowing 2700 devices with uplink rates of 800 kbps.",claude-sonnet-4-5,mMTC,,False,Failed
+"Provision a slice for public restroom occupancy sensors, supporting 2100 devices with packet delay budget of 150 ms.",claude-sonnet-4-5,mMTC,,False,Failed
+"Establish a slice for smart bus stop information panels, allowing 1200 devices with uplink rates of 600 kbps.",claude-sonnet-4-5,mMTC,,False,Failed
+"Create a slice for immersive museum AR guides, requiring 180 Mbps downstream per device and latency of 15 ms.",claude-sonnet-4-5,eMBB,,False,Failed
+"Provision a slice for urban telepresence kiosks, allowing 90 devices with downstream rates of 300 Mbps.",claude-sonnet-4-5,eMBB,,False,Failed
+"Establish a slice for real-time map updates for ride-sharing fleets, supporting 400 devices with uplink rates of 45 Mbps.",claude-sonnet-4-5,eMBB,,False,Failed
+"Deploy a slice for live election coverage teams, requiring 250 Mbps uplink per device and packet delay budget of 18 ms.",claude-sonnet-4-5,eMBB,,False,Failed
+"Create a slice for city-wide WiMAX replacement broadband, supporting 700 devices with downstream rates of 85 Mbps.",claude-sonnet-4-5,eMBB,,False,Failed
+"Provision a slice for synchronized traffic camera control, allowing 350 devices with latency under 6 ms.",claude-sonnet-4-5,uRRLC,,False,Failed
+"Establish a slice for industrial alarm systems, supporting 900 devices with packet delay budget of 5 ms.",claude-sonnet-4-5,uRRLC,,False,Failed
+"Deploy a slice for remote vehicle diagnostics in motion, requiring uplink rates of 25 Mbps and latency of 7 ms.",claude-sonnet-4-5,uRRLC,,False,Failed
+"Create a slice for automated toll gate controls, allowing 450 devices with latency capped at 6 ms.",claude-sonnet-4-5,uRRLC,,False,Failed
+"Provision a slice for coordinated drone light shows, supporting 500 devices with packet delay budget of 5 ms.",claude-sonnet-4-5,uRRLC,,False,Failed
+"Establish a slice for environmental radiation sensors, allowing 1000 devices with uplink rates of 700 kbps.",claude-sonnet-4-5,mMTC,,False,Failed
+"Deploy a slice for smart locker systems, supporting 1800 devices with latency tolerance of 150 ms.",claude-sonnet-4-5,mMTC,,False,Failed
+"Create a slice for city fountain control sensors, allowing 900 devices with uplink rates of 400 kbps.",claude-sonnet-4-5,mMTC,,False,Failed
+"Provision a slice for coastal erosion monitoring sensors, supporting 1300 devices with packet delay budget of 200 ms.",claude-sonnet-4-5,mMTC,,False,Failed
+"Establish a slice for smart traffic sign telemetry, allowing 2400 devices with uplink rates of 500 kbps.",claude-sonnet-4-5,mMTC,,False,Failed
+"Create a slice for urban drone video inspections, requiring downstream rates of 220 Mbps and latency under 15 ms.",claude-sonnet-4-5,eMBB,,False,Failed
+"Provision a slice for live online education broadcasting, supporting 300 devices with downstream rates of 140 Mbps.",claude-sonnet-4-5,eMBB,,False,Failed
+"Establish a slice for pop-up business expos, allowing 500 devices with packet delay budget of 25 ms.",claude-sonnet-4-5,eMBB,,False,Failed
+"Deploy a slice for automated rail switch control, supporting 700 devices with latency capped at 4 ms.",claude-sonnet-4-5,uRRLC,,False,Failed
+"Create a slice for synchronized robotic welding, requiring uplink rates of 30 Mbps and packet delay budget of 2 ms.",claude-sonnet-4-5,uRRLC,,False,Failed
+"Provision a slice for smart greenhouse climate sensors, allowing 1600 devices with latency tolerance of 180 ms.",claude-sonnet-4-5,mMTC,,False,Failed
+"Establish a slice for public safety siren monitoring, supporting 1100 devices with uplink rates of 600 kbps.",claude-sonnet-4-5,mMTC,,False,Failed
+"Deploy a slice for high-resolution mobile mapping vehicles, requiring 350 Mbps uplink per device and latency of 20 ms.",claude-sonnet-4-5,eMBB,,False,Failed
+"Create a slice for autonomous ferry navigation systems, allowing 90 devices with packet delay budget of 3 ms.",claude-sonnet-4-5,uRRLC,,False,Failed
+"Provision a slice for smart city soil moisture probes, supporting 2000 devices with uplink rates of 500 kbps.",claude-sonnet-4-5,mMTC,,False,Failed
+"Create a slice to support video journalists transmitting live footage from a downtown area, allowing up to 40 devices with downstream rates of 120 Mbps per device and a packet delay budget of 15 ms to keep streams smooth.",gpt-5,eMBB,eMBB,True,Policy created successfully
+"Provision a slice for a university campus event where attendees will upload and stream media, targeting uplink rates of 50 Mbps per device and downstream rates of 100 Mbps with latency capped at 20 ms.",gpt-5,eMBB,eMBB,True,Policy created successfully
+"Set up a slice for a shopping mall to improve customer mobile experience, supporting 300 devices with downstream speeds of 80 Mbps per device and a packet delay budget of 25 ms.",gpt-5,eMBB,eMBB,True,Policy created successfully
+"Deploy a slice for a media production crew using AR headsets, requiring downstream throughput of 300 Mbps per device and latency not exceeding 10 ms.",gpt-5,eMBB,eMBB,True,Policy created successfully
+"Establish a slice for commuters in a busy train station, optimized for high-capacity browsing with support for 500 devices and downstream rates of 60 Mbps per device.",gpt-5,eMBB,eMBB,True,Policy created successfully
+"Create a slice for a sports arena during live matches, prioritizing user experience with 150 Mbps downstream per device and packet delay budget of 15 ms.",gpt-5,eMBB,eMBB,True,Policy created successfully
+"Provision a slice for an outdoor music festival where attendees share video clips, allowing up to 800 devices with uplink rates of 40 Mbps per device.",gpt-5,eMBB,eMBB,True,Policy created successfully
+"Design a slice for a business district to support cloud-based applications, targeting 100 Mbps downstream per device and latency around 20 ms.",gpt-5,eMBB,eMBB,True,Policy created successfully
+"Deploy a slice for a convention center hosting tech demos, supporting 200 devices with 200 Mbps downstream rates and packet delay budget of 10 ms.",gpt-5,eMBB,eMBB,True,Policy created successfully
+"Create a slice to enhance mobile broadband along a highway corridor, ensuring downstream speeds of 90 Mbps per device and latency below 30 ms.",gpt-5,eMBB,eMBB,True,Policy created successfully
+"Provision a slice for a public square with heavy social media usage, supporting 600 devices and uplink rates of 35 Mbps per device.",gpt-5,eMBB,eMBB,True,Policy created successfully
+"Establish a slice for corporate offices using cloud desktops, with 120 Mbps downstream per device and packet delay budget of 15 ms.",gpt-5,eMBB,eMBB,True,Policy created successfully
+"Set up a slice for remote training sessions using VR, requiring 500 Mbps downstream per device and latency capped at 8 ms.",gpt-5,eMBB,eMBB,True,Policy created successfully
+"Create a slice for a harbor area supporting logistics staff tablets, allowing 150 devices with downstream rates of 70 Mbps.",gpt-5,eMBB,eMBB,True,Policy created successfully
+"Deploy a slice for tourists in a historical district, optimized for media consumption with 80 Mbps downstream per device and 25 ms latency.",gpt-5,eMBB,eMBB,True,Policy created successfully
+"Provision a slice for a TV broadcast van zone, prioritizing uplink capacity of 200 Mbps per device and packet delay budget of 12 ms.",gpt-5,eMBB,eMBB,True,Policy created successfully
+"Establish a slice for co-working spaces, supporting 250 devices with downstream speeds of 100 Mbps per device.",gpt-5,eMBB,eMBB,True,Policy created successfully
+"Create a slice for a retail analytics platform using video feeds, requiring 150 Mbps downstream and latency below 20 ms.",gpt-5,eMBB,eMBB,True,Policy created successfully
+"Deploy a slice for mobile gaming users in a city park, targeting 120 Mbps downstream per device and 10 ms latency.",gpt-5,eMBB,eMBB,True,Policy created successfully
+"Provision a slice for financial traders on the move, with 90 Mbps downstream per device and packet delay budget of 10 ms.",gpt-5,eMBB,eMBB,True,Policy created successfully
+"Create a slice to control autonomous delivery robots in an industrial zone, requiring packet delay budget of 3 ms and uplink rates of 20 Mbps per device.",gpt-5,uRRLC,uRRLC,True,Policy created successfully
+"Provision a slice for drone traffic management, supporting 60 devices with latency capped at 5 ms and downstream rates of 30 Mbps.",gpt-5,uRRLC,uRRLC,True,Policy created successfully
+"Establish a slice for automated guided vehicles in a factory, prioritizing ultra-low latency of 2 ms and uplink throughput of 25 Mbps.",gpt-5,uRRLC,uRRLC,True,Policy created successfully
+"Deploy a slice for remote crane operation at a port, requiring 1 ms packet delay budget and 50 Mbps downstream per device.",gpt-5,uRRLC,uRRLC,True,Policy created successfully
+"Create a slice for railway signaling systems, supporting 120 devices with latency not exceeding 4 ms.",gpt-5,uRRLC,uRRLC,True,Policy created successfully
+"Provision a slice for emergency response vehicle coordination, targeting uplink rates of 40 Mbps and latency under 5 ms.",gpt-5,uRRLC,uRRLC,True,Policy created successfully
+"Establish a slice for robotic assembly lines, requiring downstream rates of 60 Mbps per device and packet delay budget of 3 ms.",gpt-5,uRRLC,uRRLC,True,Policy created successfully
+"Deploy a slice for power grid protection relays, supporting 300 devices with latency capped at 4 ms.",gpt-5,uRRLC,uRRLC,True,Policy created successfully
+"Create a slice for autonomous bus control systems, allowing 80 devices with latency below 5 ms and uplink rates of 30 Mbps.",gpt-5,uRRLC,uRRLC,True,Policy created successfully
+"Provision a slice for real-time traffic light coordination, requiring 10 Mbps uplink per device and packet delay budget of 6 ms.",gpt-5,uRRLC,uRRLC,True,Policy created successfully
+"Establish a slice for remote medical equipment monitoring, prioritizing latency of 5 ms and downstream rates of 25 Mbps.",gpt-5,uRRLC,uRRLC,True,Policy created successfully
+"Deploy a slice for collaborative industrial robots, supporting 50 devices with latency capped at 2 ms.",gpt-5,uRRLC,uRRLC,True,Policy created successfully
+"Create a slice for precision agriculture machinery control, requiring uplink rates of 20 Mbps and packet delay budget of 7 ms.",gpt-5,uRRLC,uRRLC,True,Policy created successfully
+"Provision a slice for automated warehouse sorting systems, allowing 150 devices with latency under 5 ms.",gpt-5,uRRLC,uRRLC,True,Policy created successfully
+"Establish a slice for tunnel safety systems, supporting 400 devices with latency capped at 6 ms.",gpt-5,uRRLC,uRRLC,True,Policy created successfully
+"Deploy a slice for real-time video feedback in remote inspections, requiring 80 Mbps downstream per device and latency of 5 ms.",gpt-5,uRRLC,uRRLC,True,Policy created successfully
+"Create a slice for autonomous mining vehicles, allowing 70 devices with packet delay budget of 4 ms.",gpt-5,uRRLC,uRRLC,True,Policy created successfully
+"Provision a slice for industrial motion control networks, requiring latency not exceeding 2 ms and uplink rates of 15 Mbps.",gpt-5,uRRLC,uRRLC,True,Policy created successfully
+"Establish a slice for airport ground vehicle coordination, supporting 200 devices with latency capped at 5 ms.",gpt-5,uRRLC,uRRLC,True,Policy created successfully
+"Deploy a slice for remote surgery assistance systems, requiring downstream rates of 1 Gbps per device and packet delay budget of 1 ms.",gpt-5,uRRLC,uRRLC,True,Policy created successfully
+"Create a slice for environmental sensors monitoring air quality across a city district, supporting up to 3000 devices with uplink rates of 1 Mbps per device.",gpt-5,mMTC,mMTC,True,Policy created successfully
+"Provision a slice for smart parking sensors, allowing 2500 devices with packet delay budget of 100 ms.",gpt-5,mMTC,mMTC,True,Policy created successfully
+"Establish a slice for utility metering infrastructure, supporting 4000 devices with uplink rates of 500 kbps per device.",gpt-5,mMTC,mMTC,True,Policy created successfully
+"Deploy a slice for waste management sensors, allowing 1800 devices with latency tolerance of 150 ms.",gpt-5,mMTC,mMTC,True,Policy created successfully
+"Create a slice for flood monitoring sensors along a river, supporting 1200 devices with uplink rates of 800 kbps.",gpt-5,mMTC,eMBB,False,Policy created successfully
+"Provision a slice for agricultural soil sensors, allowing 2200 devices with packet delay budget of 200 ms.",gpt-5,mMTC,mMTC,True,Policy created successfully
+"Establish a slice for street lighting control nodes, supporting 3500 devices with uplink rates of 300 kbps.",gpt-5,mMTC,mMTC,True,Policy created successfully
+"Deploy a slice for weather stations in rural areas, allowing 900 devices with latency tolerance of 250 ms.",gpt-5,mMTC,mMTC,True,Policy created successfully
+"Create a slice for industrial condition monitoring sensors, supporting 1600 devices with uplink rates of 1 Mbps.",gpt-5,mMTC,mMTC,True,Policy created successfully
+"Provision a slice for smart water distribution sensors, allowing 2800 devices with packet delay budget of 120 ms.",gpt-5,mMTC,mMTC,True,Policy created successfully
+"Establish a slice for noise pollution monitoring units, supporting 1400 devices with uplink rates of 600 kbps.",gpt-5,mMTC,mMTC,True,Policy created successfully
+"Deploy a slice for pipeline pressure sensors, allowing 2000 devices with latency tolerance of 180 ms.",gpt-5,mMTC,mMTC,True,Policy created successfully
+"Create a slice for smart agriculture weather probes, supporting 1100 devices with uplink rates of 700 kbps.",gpt-5,mMTC,mMTC,True,Policy created successfully
+"Provision a slice for building management sensors in commercial zones, allowing 3200 devices with packet delay budget of 100 ms.",gpt-5,mMTC,mMTC,True,Policy created successfully
+"Establish a slice for public transportation telemetry sensors, supporting 1700 devices with uplink rates of 900 kbps.",gpt-5,mMTC,eMBB,False,Policy created successfully
+"Deploy a slice for smart irrigation controllers, allowing 2600 devices with latency tolerance of 200 ms.",gpt-5,mMTC,mMTC,True,Policy created successfully
+"Create a slice for cold-chain temperature sensors, supporting 1500 devices with uplink rates of 500 kbps.",gpt-5,mMTC,mMTC,True,Policy created successfully
+"Provision a slice for structural health monitoring sensors on bridges, allowing 800 devices with packet delay budget of 150 ms.",gpt-5,mMTC,mMTC,True,Policy created successfully
+"Establish a slice for city-wide asset tracking tags, supporting 4200 devices with uplink rates of 400 kbps.",gpt-5,mMTC,mMTC,True,Policy created successfully
+"Deploy a slice for smart recycling bin sensors, allowing 2300 devices with latency tolerance of 180 ms.",gpt-5,mMTC,mMTC,True,Policy created successfully
+"Create a slice for a mobile esports tournament, requiring downstream rates of 250 Mbps per device and packet delay budget of 12 ms.",gpt-5,eMBB,eMBB,True,Policy created successfully
+"Provision a slice for film editors working remotely on-site, allowing 60 devices with 400 Mbps downstream per device.",gpt-5,eMBB,eMBB,True,Policy created successfully
+"Establish a slice for city surveillance analysts reviewing HD feeds, requiring 200 Mbps downstream and latency under 20 ms.",gpt-5,eMBB,eMBB,True,Policy created successfully
+"Deploy a slice for interactive advertising screens, supporting 100 devices with downstream rates of 150 Mbps.",gpt-5,eMBB,eMBB,True,Policy created successfully
+"Create a slice for maritime passenger terminals, prioritizing user experience with 90 Mbps downstream per device.",gpt-5,eMBB,eMBB,True,Policy created successfully
+"Provision a slice for automated train door control systems, supporting 500 devices with latency capped at 4 ms.",gpt-5,uRRLC,uRRLC,True,Policy created successfully
+"Establish a slice for robotic firefighting units, requiring uplink rates of 35 Mbps and packet delay budget of 3 ms.",gpt-5,uRRLC,uRRLC,True,Policy created successfully
+"Deploy a slice for collision avoidance systems at intersections, allowing 600 devices with latency under 5 ms.",gpt-5,uRRLC,uRRLC,True,Policy created successfully
+"Create a slice for remote heavy machinery diagnostics, requiring downstream rates of 70 Mbps and latency of 6 ms.",gpt-5,uRRLC,eMBB,False,Policy created successfully
+"Provision a slice for automated port gate operations, supporting 250 devices with packet delay budget of 4 ms.",gpt-5,uRRLC,uRRLC,True,Policy created successfully
+"Establish a slice for city bike availability sensors, allowing 3100 devices with uplink rates of 300 kbps.",gpt-5,mMTC,mMTC,True,Policy created successfully
+"Deploy a slice for smart vending machine telemetry, supporting 1900 devices with latency tolerance of 200 ms.",gpt-5,mMTC,mMTC,True,Policy created successfully
+"Create a slice for energy consumption sensors in industrial parks, allowing 2700 devices with uplink rates of 800 kbps.",gpt-5,mMTC,mMTC,True,Policy created successfully
+"Provision a slice for public restroom occupancy sensors, supporting 2100 devices with packet delay budget of 150 ms.",gpt-5,mMTC,mMTC,True,Policy created successfully
+"Establish a slice for smart bus stop information panels, allowing 1200 devices with uplink rates of 600 kbps.",gpt-5,mMTC,mMTC,True,Policy created successfully
+"Create a slice for immersive museum AR guides, requiring 180 Mbps downstream per device and latency of 15 ms.",gpt-5,eMBB,eMBB,True,Policy created successfully
+"Provision a slice for urban telepresence kiosks, allowing 90 devices with downstream rates of 300 Mbps.",gpt-5,eMBB,eMBB,True,Policy created successfully
+"Establish a slice for real-time map updates for ride-sharing fleets, supporting 400 devices with uplink rates of 45 Mbps.",gpt-5,eMBB,eMBB,True,Policy created successfully
+"Deploy a slice for live election coverage teams, requiring 250 Mbps uplink per device and packet delay budget of 18 ms.",gpt-5,eMBB,eMBB,True,Policy created successfully
+"Create a slice for city-wide WiMAX replacement broadband, supporting 700 devices with downstream rates of 85 Mbps.",gpt-5,eMBB,eMBB,True,Policy created successfully
+"Provision a slice for synchronized traffic camera control, allowing 350 devices with latency under 6 ms.",gpt-5,uRRLC,uRRLC,True,Policy created successfully
+"Establish a slice for industrial alarm systems, supporting 900 devices with packet delay budget of 5 ms.",gpt-5,uRRLC,uRRLC,True,Policy created successfully
+"Deploy a slice for remote vehicle diagnostics in motion, requiring uplink rates of 25 Mbps and latency of 7 ms.",gpt-5,uRRLC,uRRLC,True,Policy created successfully
+"Create a slice for automated toll gate controls, allowing 450 devices with latency capped at 6 ms.",gpt-5,uRRLC,uRRLC,True,Policy created successfully
+"Provision a slice for coordinated drone light shows, supporting 500 devices with packet delay budget of 5 ms.",gpt-5,uRRLC,uRRLC,True,Policy created successfully
+"Establish a slice for environmental radiation sensors, allowing 1000 devices with uplink rates of 700 kbps.",gpt-5,mMTC,mMTC,True,Policy created successfully
+"Deploy a slice for smart locker systems, supporting 1800 devices with latency tolerance of 150 ms.",gpt-5,mMTC,mMTC,True,Policy created successfully
+"Create a slice for city fountain control sensors, allowing 900 devices with uplink rates of 400 kbps.",gpt-5,mMTC,mMTC,True,Policy created successfully
+"Provision a slice for coastal erosion monitoring sensors, supporting 1300 devices with packet delay budget of 200 ms.",gpt-5,mMTC,mMTC,True,Policy created successfully
+"Establish a slice for smart traffic sign telemetry, allowing 2400 devices with uplink rates of 500 kbps.",gpt-5,mMTC,mMTC,True,Policy created successfully
+"Create a slice for urban drone video inspections, requiring downstream rates of 220 Mbps and latency under 15 ms.",gpt-5,eMBB,eMBB,True,Policy created successfully
+"Provision a slice for live online education broadcasting, supporting 300 devices with downstream rates of 140 Mbps.",gpt-5,eMBB,eMBB,True,Policy created successfully
+"Establish a slice for pop-up business expos, allowing 500 devices with packet delay budget of 25 ms.",gpt-5,eMBB,eMBB,True,Policy created successfully
+"Deploy a slice for automated rail switch control, supporting 700 devices with latency capped at 4 ms.",gpt-5,uRRLC,uRRLC,True,Policy created successfully
+"Create a slice for synchronized robotic welding, requiring uplink rates of 30 Mbps and packet delay budget of 2 ms.",gpt-5,uRRLC,uRRLC,True,Policy created successfully
+"Provision a slice for smart greenhouse climate sensors, allowing 1600 devices with latency tolerance of 180 ms.",gpt-5,mMTC,mMTC,True,Policy created successfully
+"Establish a slice for public safety siren monitoring, supporting 1100 devices with uplink rates of 600 kbps.",gpt-5,mMTC,eMBB,False,Policy created successfully
+"Deploy a slice for high-resolution mobile mapping vehicles, requiring 350 Mbps uplink per device and latency of 20 ms.",gpt-5,eMBB,eMBB,True,Policy created successfully
+"Create a slice for autonomous ferry navigation systems, allowing 90 devices with packet delay budget of 3 ms.",gpt-5,uRRLC,uRRLC,True,Policy created successfully
+"Provision a slice for smart city soil moisture probes, supporting 2000 devices with uplink rates of 500 kbps.",gpt-5,mMTC,mMTC,True,Policy created successfully
+"Create a slice to support video journalists transmitting live footage from a downtown area, allowing up to 40 devices with downstream rates of 120 Mbps per device and a packet delay budget of 15 ms to keep streams smooth.",gpt-5-nano,eMBB,,False,Failed
+"Provision a slice for a university campus event where attendees will upload and stream media, targeting uplink rates of 50 Mbps per device and downstream rates of 100 Mbps with latency capped at 20 ms.",gpt-5-nano,eMBB,eMBB,True,Policy created successfully
+"Set up a slice for a shopping mall to improve customer mobile experience, supporting 300 devices with downstream speeds of 80 Mbps per device and a packet delay budget of 25 ms.",gpt-5-nano,eMBB,eMBB,True,Policy created successfully
+"Deploy a slice for a media production crew using AR headsets, requiring downstream throughput of 300 Mbps per device and latency not exceeding 10 ms.",gpt-5-nano,eMBB,eMBB,True,Policy created successfully
+"Establish a slice for commuters in a busy train station, optimized for high-capacity browsing with support for 500 devices and downstream rates of 60 Mbps per device.",gpt-5-nano,eMBB,eMBB,True,Policy created successfully
+"Create a slice for a sports arena during live matches, prioritizing user experience with 150 Mbps downstream per device and packet delay budget of 15 ms.",gpt-5-nano,eMBB,eMBB,True,Policy created successfully
+"Provision a slice for an outdoor music festival where attendees share video clips, allowing up to 800 devices with uplink rates of 40 Mbps per device.",gpt-5-nano,eMBB,eMBB,True,Policy created successfully
+"Design a slice for a business district to support cloud-based applications, targeting 100 Mbps downstream per device and latency around 20 ms.",gpt-5-nano,eMBB,eMBB,True,Policy created successfully
+"Deploy a slice for a convention center hosting tech demos, supporting 200 devices with 200 Mbps downstream rates and packet delay budget of 10 ms.",gpt-5-nano,eMBB,eMBB,True,Policy created successfully
+"Create a slice to enhance mobile broadband along a highway corridor, ensuring downstream speeds of 90 Mbps per device and latency below 30 ms.",gpt-5-nano,eMBB,eMBB,True,Policy created successfully
+"Provision a slice for a public square with heavy social media usage, supporting 600 devices and uplink rates of 35 Mbps per device.",gpt-5-nano,eMBB,eMBB,True,Policy created successfully
+"Establish a slice for corporate offices using cloud desktops, with 120 Mbps downstream per device and packet delay budget of 15 ms.",gpt-5-nano,eMBB,eMBB,True,Policy created successfully
+"Set up a slice for remote training sessions using VR, requiring 500 Mbps downstream per device and latency capped at 8 ms.",gpt-5-nano,eMBB,eMBB,True,Policy created successfully
+"Create a slice for a harbor area supporting logistics staff tablets, allowing 150 devices with downstream rates of 70 Mbps.",gpt-5-nano,eMBB,,False,Failed
+"Deploy a slice for tourists in a historical district, optimized for media consumption with 80 Mbps downstream per device and 25 ms latency.",gpt-5-nano,eMBB,eMBB,True,Policy created successfully
+"Provision a slice for a TV broadcast van zone, prioritizing uplink capacity of 200 Mbps per device and packet delay budget of 12 ms.",gpt-5-nano,eMBB,uRRLC,False,Policy created successfully
+"Establish a slice for co-working spaces, supporting 250 devices with downstream speeds of 100 Mbps per device.",gpt-5-nano,eMBB,eMBB,True,Policy created successfully
+"Create a slice for a retail analytics platform using video feeds, requiring 150 Mbps downstream and latency below 20 ms.",gpt-5-nano,eMBB,eMBB,True,Policy created successfully
+"Deploy a slice for mobile gaming users in a city park, targeting 120 Mbps downstream per device and 10 ms latency.",gpt-5-nano,eMBB,eMBB,True,Policy created successfully
+"Provision a slice for financial traders on the move, with 90 Mbps downstream per device and packet delay budget of 10 ms.",gpt-5-nano,eMBB,uRRLC,False,Policy created successfully
+"Create a slice to control autonomous delivery robots in an industrial zone, requiring packet delay budget of 3 ms and uplink rates of 20 Mbps per device.",gpt-5-nano,uRRLC,uRRLC,True,Policy created successfully
+"Provision a slice for drone traffic management, supporting 60 devices with latency capped at 5 ms and downstream rates of 30 Mbps.",gpt-5-nano,uRRLC,uRRLC,True,Policy created successfully
+"Establish a slice for automated guided vehicles in a factory, prioritizing ultra-low latency of 2 ms and uplink throughput of 25 Mbps.",gpt-5-nano,uRRLC,uRRLC,True,Policy created successfully
+"Deploy a slice for remote crane operation at a port, requiring 1 ms packet delay budget and 50 Mbps downstream per device.",gpt-5-nano,uRRLC,uRRLC,True,Policy created successfully
+"Create a slice for railway signaling systems, supporting 120 devices with latency not exceeding 4 ms.",gpt-5-nano,uRRLC,uRRLC,True,Policy created successfully
+"Provision a slice for emergency response vehicle coordination, targeting uplink rates of 40 Mbps and latency under 5 ms.",gpt-5-nano,uRRLC,uRRLC,True,Policy created successfully
+"Establish a slice for robotic assembly lines, requiring downstream rates of 60 Mbps per device and packet delay budget of 3 ms.",gpt-5-nano,uRRLC,uRRLC,True,Policy created successfully
+"Deploy a slice for power grid protection relays, supporting 300 devices with latency capped at 4 ms.",gpt-5-nano,uRRLC,uRRLC,True,Policy created successfully
+"Create a slice for autonomous bus control systems, allowing 80 devices with latency below 5 ms and uplink rates of 30 Mbps.",gpt-5-nano,uRRLC,uRRLC,True,Policy created successfully
+"Provision a slice for real-time traffic light coordination, requiring 10 Mbps uplink per device and packet delay budget of 6 ms.",gpt-5-nano,uRRLC,uRRLC,True,Policy created successfully
+"Establish a slice for remote medical equipment monitoring, prioritizing latency of 5 ms and downstream rates of 25 Mbps.",gpt-5-nano,uRRLC,uRRLC,True,Policy created successfully
+"Deploy a slice for collaborative industrial robots, supporting 50 devices with latency capped at 2 ms.",gpt-5-nano,uRRLC,uRRLC,True,Policy created successfully
+"Create a slice for precision agriculture machinery control, requiring uplink rates of 20 Mbps and packet delay budget of 7 ms.",gpt-5-nano,uRRLC,uRRLC,True,Policy created successfully
+"Provision a slice for automated warehouse sorting systems, allowing 150 devices with latency under 5 ms.",gpt-5-nano,uRRLC,uRRLC,True,Policy created successfully
+"Establish a slice for tunnel safety systems, supporting 400 devices with latency capped at 6 ms.",gpt-5-nano,uRRLC,uRRLC,True,Policy created successfully
+"Deploy a slice for real-time video feedback in remote inspections, requiring 80 Mbps downstream per device and latency of 5 ms.",gpt-5-nano,uRRLC,uRRLC,True,Policy created successfully
+"Create a slice for autonomous mining vehicles, allowing 70 devices with packet delay budget of 4 ms.",gpt-5-nano,uRRLC,uRRLC,True,Policy created successfully
+"Provision a slice for industrial motion control networks, requiring latency not exceeding 2 ms and uplink rates of 15 Mbps.",gpt-5-nano,uRRLC,uRRLC,True,Policy created successfully
+"Establish a slice for airport ground vehicle coordination, supporting 200 devices with latency capped at 5 ms.",gpt-5-nano,uRRLC,uRRLC,True,Policy created successfully
+"Deploy a slice for remote surgery assistance systems, requiring downstream rates of 1 Gbps per device and packet delay budget of 1 ms.",gpt-5-nano,uRRLC,uRRLC,True,Policy created successfully
+"Create a slice for environmental sensors monitoring air quality across a city district, supporting up to 3000 devices with uplink rates of 1 Mbps per device.",gpt-5-nano,mMTC,mMTC,True,Policy created successfully
+"Provision a slice for smart parking sensors, allowing 2500 devices with packet delay budget of 100 ms.",gpt-5-nano,mMTC,mMTC,True,Policy created successfully
+"Establish a slice for utility metering infrastructure, supporting 4000 devices with uplink rates of 500 kbps per device.",gpt-5-nano,mMTC,mMTC,True,Policy created successfully
+"Deploy a slice for waste management sensors, allowing 1800 devices with latency tolerance of 150 ms.",gpt-5-nano,mMTC,mMTC,True,Policy created successfully
+"Create a slice for flood monitoring sensors along a river, supporting 1200 devices with uplink rates of 800 kbps.",gpt-5-nano,mMTC,mMTC,True,Policy created successfully
+"Provision a slice for agricultural soil sensors, allowing 2200 devices with packet delay budget of 200 ms.",gpt-5-nano,mMTC,mMTC,True,Policy created successfully
+"Establish a slice for street lighting control nodes, supporting 3500 devices with uplink rates of 300 kbps.",gpt-5-nano,mMTC,mMTC,True,Policy created successfully
+"Deploy a slice for weather stations in rural areas, allowing 900 devices with latency tolerance of 250 ms.",gpt-5-nano,mMTC,,False,Failed
+"Create a slice for industrial condition monitoring sensors, supporting 1600 devices with uplink rates of 1 Mbps.",gpt-5-nano,mMTC,mMTC,True,Policy created successfully
+"Provision a slice for smart water distribution sensors, allowing 2800 devices with packet delay budget of 120 ms.",gpt-5-nano,mMTC,mMTC,True,Policy created successfully
+"Establish a slice for noise pollution monitoring units, supporting 1400 devices with uplink rates of 600 kbps.",gpt-5-nano,mMTC,mMTC,True,Policy created successfully
+"Deploy a slice for pipeline pressure sensors, allowing 2000 devices with latency tolerance of 180 ms.",gpt-5-nano,mMTC,mMTC,True,Policy created successfully
+"Create a slice for smart agriculture weather probes, supporting 1100 devices with uplink rates of 700 kbps.",gpt-5-nano,mMTC,mMTC,True,Policy created successfully
+"Provision a slice for building management sensors in commercial zones, allowing 3200 devices with packet delay budget of 100 ms.",gpt-5-nano,mMTC,mMTC,True,Policy created successfully
+"Establish a slice for public transportation telemetry sensors, supporting 1700 devices with uplink rates of 900 kbps.",gpt-5-nano,mMTC,mMTC,True,Policy created successfully
+"Deploy a slice for smart irrigation controllers, allowing 2600 devices with latency tolerance of 200 ms.",gpt-5-nano,mMTC,mMTC,True,Policy created successfully
+"Create a slice for cold-chain temperature sensors, supporting 1500 devices with uplink rates of 500 kbps.",gpt-5-nano,mMTC,mMTC,True,Policy created successfully
+"Provision a slice for structural health monitoring sensors on bridges, allowing 800 devices with packet delay budget of 150 ms.",gpt-5-nano,mMTC,mMTC,True,Policy created successfully
+"Establish a slice for city-wide asset tracking tags, supporting 4200 devices with uplink rates of 400 kbps.",gpt-5-nano,mMTC,mMTC,True,Policy created successfully
+"Deploy a slice for smart recycling bin sensors, allowing 2300 devices with latency tolerance of 180 ms.",gpt-5-nano,mMTC,mMTC,True,Policy created successfully
+"Create a slice for a mobile esports tournament, requiring downstream rates of 250 Mbps per device and packet delay budget of 12 ms.",gpt-5-nano,eMBB,uRRLC,False,Policy created successfully
+"Provision a slice for film editors working remotely on-site, allowing 60 devices with 400 Mbps downstream per device.",gpt-5-nano,eMBB,eMBB,True,Policy created successfully
+"Establish a slice for city surveillance analysts reviewing HD feeds, requiring 200 Mbps downstream and latency under 20 ms.",gpt-5-nano,eMBB,uRRLC,False,Policy created successfully
+"Deploy a slice for interactive advertising screens, supporting 100 devices with downstream rates of 150 Mbps.",gpt-5-nano,eMBB,eMBB,True,Policy created successfully
+"Create a slice for maritime passenger terminals, prioritizing user experience with 90 Mbps downstream per device.",gpt-5-nano,eMBB,eMBB,True,Policy created successfully
+"Provision a slice for automated train door control systems, supporting 500 devices with latency capped at 4 ms.",gpt-5-nano,uRRLC,uRRLC,True,Policy created successfully
+"Establish a slice for robotic firefighting units, requiring uplink rates of 35 Mbps and packet delay budget of 3 ms.",gpt-5-nano,uRRLC,uRRLC,True,Policy created successfully
+"Deploy a slice for collision avoidance systems at intersections, allowing 600 devices with latency under 5 ms.",gpt-5-nano,uRRLC,uRRLC,True,Policy created successfully
+"Create a slice for remote heavy machinery diagnostics, requiring downstream rates of 70 Mbps and latency of 6 ms.",gpt-5-nano,uRRLC,uRRLC,True,Policy created successfully
+"Provision a slice for automated port gate operations, supporting 250 devices with packet delay budget of 4 ms.",gpt-5-nano,uRRLC,uRRLC,True,Policy created successfully
+"Establish a slice for city bike availability sensors, allowing 3100 devices with uplink rates of 300 kbps.",gpt-5-nano,mMTC,mMTC,True,Policy created successfully
+"Deploy a slice for smart vending machine telemetry, supporting 1900 devices with latency tolerance of 200 ms.",gpt-5-nano,mMTC,mMTC,True,Policy created successfully
+"Create a slice for energy consumption sensors in industrial parks, allowing 2700 devices with uplink rates of 800 kbps.",gpt-5-nano,mMTC,mMTC,True,Policy created successfully
+"Provision a slice for public restroom occupancy sensors, supporting 2100 devices with packet delay budget of 150 ms.",gpt-5-nano,mMTC,mMTC,True,Policy created successfully
+"Establish a slice for smart bus stop information panels, allowing 1200 devices with uplink rates of 600 kbps.",gpt-5-nano,mMTC,mMTC,True,Policy created successfully
+"Create a slice for immersive museum AR guides, requiring 180 Mbps downstream per device and latency of 15 ms.",gpt-5-nano,eMBB,eMBB,True,Policy created successfully
+"Provision a slice for urban telepresence kiosks, allowing 90 devices with downstream rates of 300 Mbps.",gpt-5-nano,eMBB,eMBB,True,Policy created successfully
+"Establish a slice for real-time map updates for ride-sharing fleets, supporting 400 devices with uplink rates of 45 Mbps.",gpt-5-nano,eMBB,uRRLC,False,Policy created successfully
+"Deploy a slice for live election coverage teams, requiring 250 Mbps uplink per device and packet delay budget of 18 ms.",gpt-5-nano,eMBB,eMBB,True,Policy created successfully
+"Create a slice for city-wide WiMAX replacement broadband, supporting 700 devices with downstream rates of 85 Mbps.",gpt-5-nano,eMBB,eMBB,True,Policy created successfully
+"Provision a slice for synchronized traffic camera control, allowing 350 devices with latency under 6 ms.",gpt-5-nano,uRRLC,uRRLC,True,Policy created successfully
+"Establish a slice for industrial alarm systems, supporting 900 devices with packet delay budget of 5 ms.",gpt-5-nano,uRRLC,uRRLC,True,Policy created successfully
+"Deploy a slice for remote vehicle diagnostics in motion, requiring uplink rates of 25 Mbps and latency of 7 ms.",gpt-5-nano,uRRLC,uRRLC,True,Policy created successfully
+"Create a slice for automated toll gate controls, allowing 450 devices with latency capped at 6 ms.",gpt-5-nano,uRRLC,uRRLC,True,Policy created successfully
+"Provision a slice for coordinated drone light shows, supporting 500 devices with packet delay budget of 5 ms.",gpt-5-nano,uRRLC,uRRLC,True,Policy created successfully
+"Establish a slice for environmental radiation sensors, allowing 1000 devices with uplink rates of 700 kbps.",gpt-5-nano,mMTC,mMTC,True,Policy created successfully
+"Deploy a slice for smart locker systems, supporting 1800 devices with latency tolerance of 150 ms.",gpt-5-nano,mMTC,mMTC,True,Policy created successfully
+"Create a slice for city fountain control sensors, allowing 900 devices with uplink rates of 400 kbps.",gpt-5-nano,mMTC,mMTC,True,Policy created successfully
+"Provision a slice for coastal erosion monitoring sensors, supporting 1300 devices with packet delay budget of 200 ms.",gpt-5-nano,mMTC,mMTC,True,Policy created successfully
+"Establish a slice for smart traffic sign telemetry, allowing 2400 devices with uplink rates of 500 kbps.",gpt-5-nano,mMTC,mMTC,True,Policy created successfully
+"Create a slice for urban drone video inspections, requiring downstream rates of 220 Mbps and latency under 15 ms.",gpt-5-nano,eMBB,uRRLC,False,Policy created successfully
+"Provision a slice for live online education broadcasting, supporting 300 devices with downstream rates of 140 Mbps.",gpt-5-nano,eMBB,eMBB,True,Policy created successfully
+"Establish a slice for pop-up business expos, allowing 500 devices with packet delay budget of 25 ms.",gpt-5-nano,eMBB,eMBB,True,Policy created successfully
+"Deploy a slice for automated rail switch control, supporting 700 devices with latency capped at 4 ms.",gpt-5-nano,uRRLC,uRRLC,True,Policy created successfully
+"Create a slice for synchronized robotic welding, requiring uplink rates of 30 Mbps and packet delay budget of 2 ms.",gpt-5-nano,uRRLC,uRRLC,True,Policy created successfully
+"Provision a slice for smart greenhouse climate sensors, allowing 1600 devices with latency tolerance of 180 ms.",gpt-5-nano,mMTC,mMTC,True,Policy created successfully
+"Establish a slice for public safety siren monitoring, supporting 1100 devices with uplink rates of 600 kbps.",gpt-5-nano,mMTC,uRRLC,False,Policy created successfully
+"Deploy a slice for high-resolution mobile mapping vehicles, requiring 350 Mbps uplink per device and latency of 20 ms.",gpt-5-nano,eMBB,eMBB,True,Policy created successfully
+"Create a slice for autonomous ferry navigation systems, allowing 90 devices with packet delay budget of 3 ms.",gpt-5-nano,uRRLC,uRRLC,True,Policy created successfully
+"Provision a slice for smart city soil moisture probes, supporting 2000 devices with uplink rates of 500 kbps.",gpt-5-nano,mMTC,mMTC,True,Policy created successfully
+"Create a slice to support video journalists transmitting live footage from a downtown area, allowing up to 40 devices with downstream rates of 120 Mbps per device and a packet delay budget of 15 ms to keep streams smooth.",gemini-3-flash-preview,eMBB,eMBB,True,Policy created successfully
+"Provision a slice for a university campus event where attendees will upload and stream media, targeting uplink rates of 50 Mbps per device and downstream rates of 100 Mbps with latency capped at 20 ms.",gemini-3-flash-preview,eMBB,eMBB,True,Policy created successfully
+"Set up a slice for a shopping mall to improve customer mobile experience, supporting 300 devices with downstream speeds of 80 Mbps per device and a packet delay budget of 25 ms.",gemini-3-flash-preview,eMBB,eMBB,True,Policy created successfully
+"Deploy a slice for a media production crew using AR headsets, requiring downstream throughput of 300 Mbps per device and latency not exceeding 10 ms.",gemini-3-flash-preview,eMBB,eMBB,True,Policy created successfully
+"Establish a slice for commuters in a busy train station, optimized for high-capacity browsing with support for 500 devices and downstream rates of 60 Mbps per device.",gemini-3-flash-preview,eMBB,eMBB,True,Policy created successfully
+"Create a slice for a sports arena during live matches, prioritizing user experience with 150 Mbps downstream per device and packet delay budget of 15 ms.",gemini-3-flash-preview,eMBB,eMBB,True,Policy created successfully
+"Provision a slice for an outdoor music festival where attendees share video clips, allowing up to 800 devices with uplink rates of 40 Mbps per device.",gemini-3-flash-preview,eMBB,eMBB,True,Policy created successfully
+"Design a slice for a business district to support cloud-based applications, targeting 100 Mbps downstream per device and latency around 20 ms.",gemini-3-flash-preview,eMBB,eMBB,True,Policy created successfully
+"Deploy a slice for a convention center hosting tech demos, supporting 200 devices with 200 Mbps downstream rates and packet delay budget of 10 ms.",gemini-3-flash-preview,eMBB,eMBB,True,Policy created successfully
+"Create a slice to enhance mobile broadband along a highway corridor, ensuring downstream speeds of 90 Mbps per device and latency below 30 ms.",gemini-3-flash-preview,eMBB,eMBB,True,Policy created successfully
+"Provision a slice for a public square with heavy social media usage, supporting 600 devices and uplink rates of 35 Mbps per device.",gemini-3-flash-preview,eMBB,,False,Failed
+"Establish a slice for corporate offices using cloud desktops, with 120 Mbps downstream per device and packet delay budget of 15 ms.",gemini-3-flash-preview,eMBB,eMBB,True,Policy created successfully
+"Set up a slice for remote training sessions using VR, requiring 500 Mbps downstream per device and latency capped at 8 ms.",gemini-3-flash-preview,eMBB,eMBB,True,Policy created successfully
+"Create a slice for a harbor area supporting logistics staff tablets, allowing 150 devices with downstream rates of 70 Mbps.",gemini-3-flash-preview,eMBB,eMBB,True,Policy created successfully
+"Deploy a slice for tourists in a historical district, optimized for media consumption with 80 Mbps downstream per device and 25 ms latency.",gemini-3-flash-preview,eMBB,eMBB,True,Policy created successfully
+"Provision a slice for a TV broadcast van zone, prioritizing uplink capacity of 200 Mbps per device and packet delay budget of 12 ms.",gemini-3-flash-preview,eMBB,eMBB,True,Policy created successfully
+"Establish a slice for co-working spaces, supporting 250 devices with downstream speeds of 100 Mbps per device.",gemini-3-flash-preview,eMBB,eMBB,True,Policy created successfully
+"Create a slice for a retail analytics platform using video feeds, requiring 150 Mbps downstream and latency below 20 ms.",gemini-3-flash-preview,eMBB,eMBB,True,Policy created successfully
+"Deploy a slice for mobile gaming users in a city park, targeting 120 Mbps downstream per device and 10 ms latency.",gemini-3-flash-preview,eMBB,eMBB,True,Policy created successfully
+"Provision a slice for financial traders on the move, with 90 Mbps downstream per device and packet delay budget of 10 ms.",gemini-3-flash-preview,eMBB,eMBB,True,Policy created successfully
+"Create a slice to control autonomous delivery robots in an industrial zone, requiring packet delay budget of 3 ms and uplink rates of 20 Mbps per device.",gemini-3-flash-preview,uRRLC,uRRLC,True,Policy created successfully
+"Provision a slice for drone traffic management, supporting 60 devices with latency capped at 5 ms and downstream rates of 30 Mbps.",gemini-3-flash-preview,uRRLC,uRRLC,True,Policy created successfully
+"Establish a slice for automated guided vehicles in a factory, prioritizing ultra-low latency of 2 ms and uplink throughput of 25 Mbps.",gemini-3-flash-preview,uRRLC,uRRLC,True,Policy created successfully
+"Deploy a slice for remote crane operation at a port, requiring 1 ms packet delay budget and 50 Mbps downstream per device.",gemini-3-flash-preview,uRRLC,uRRLC,True,Policy created successfully
+"Create a slice for railway signaling systems, supporting 120 devices with latency not exceeding 4 ms.",gemini-3-flash-preview,uRRLC,uRRLC,True,Policy created successfully
+"Provision a slice for emergency response vehicle coordination, targeting uplink rates of 40 Mbps and latency under 5 ms.",gemini-3-flash-preview,uRRLC,,False,Failed
+"Establish a slice for robotic assembly lines, requiring downstream rates of 60 Mbps per device and packet delay budget of 3 ms.",gemini-3-flash-preview,uRRLC,uRRLC,True,Policy created successfully
+"Deploy a slice for power grid protection relays, supporting 300 devices with latency capped at 4 ms.",gemini-3-flash-preview,uRRLC,uRRLC,True,Policy created successfully
+"Create a slice for autonomous bus control systems, allowing 80 devices with latency below 5 ms and uplink rates of 30 Mbps.",gemini-3-flash-preview,uRRLC,,False,Failed
+"Provision a slice for real-time traffic light coordination, requiring 10 Mbps uplink per device and packet delay budget of 6 ms.",gemini-3-flash-preview,uRRLC,,False,Failed
+"Establish a slice for remote medical equipment monitoring, prioritizing latency of 5 ms and downstream rates of 25 Mbps.",gemini-3-flash-preview,uRRLC,uRRLC,True,Policy created successfully
+"Deploy a slice for collaborative industrial robots, supporting 50 devices with latency capped at 2 ms.",gemini-3-flash-preview,uRRLC,uRRLC,True,Policy created successfully
+"Create a slice for precision agriculture machinery control, requiring uplink rates of 20 Mbps and packet delay budget of 7 ms.",gemini-3-flash-preview,uRRLC,,False,Failed
+"Provision a slice for automated warehouse sorting systems, allowing 150 devices with latency under 5 ms.",gemini-3-flash-preview,uRRLC,uRRLC,True,Policy created successfully
+"Establish a slice for tunnel safety systems, supporting 400 devices with latency capped at 6 ms.",gemini-3-flash-preview,uRRLC,uRRLC,True,Policy created successfully
+"Deploy a slice for real-time video feedback in remote inspections, requiring 80 Mbps downstream per device and latency of 5 ms.",gemini-3-flash-preview,uRRLC,,False,Failed
+"Create a slice for autonomous mining vehicles, allowing 70 devices with packet delay budget of 4 ms.",gemini-3-flash-preview,uRRLC,,False,Failed
+"Provision a slice for industrial motion control networks, requiring latency not exceeding 2 ms and uplink rates of 15 Mbps.",gemini-3-flash-preview,uRRLC,uRRLC,True,Policy created successfully
+"Establish a slice for airport ground vehicle coordination, supporting 200 devices with latency capped at 5 ms.",gemini-3-flash-preview,uRRLC,uRRLC,True,Policy created successfully
+"Deploy a slice for remote surgery assistance systems, requiring downstream rates of 1 Gbps per device and packet delay budget of 1 ms.",gemini-3-flash-preview,uRRLC,uRRLC,True,Policy created successfully
+"Create a slice for environmental sensors monitoring air quality across a city district, supporting up to 3000 devices with uplink rates of 1 Mbps per device.",gemini-3-flash-preview,mMTC,,False,Failed
+"Provision a slice for smart parking sensors, allowing 2500 devices with packet delay budget of 100 ms.",gemini-3-flash-preview,mMTC,mMTC,True,Policy created successfully
+"Establish a slice for utility metering infrastructure, supporting 4000 devices with uplink rates of 500 kbps per device.",gemini-3-flash-preview,mMTC,,False,Failed
+"Deploy a slice for waste management sensors, allowing 1800 devices with latency tolerance of 150 ms.",gemini-3-flash-preview,mMTC,mMTC,True,Policy created successfully
+"Create a slice for flood monitoring sensors along a river, supporting 1200 devices with uplink rates of 800 kbps.",gemini-3-flash-preview,mMTC,,False,Failed
+"Provision a slice for agricultural soil sensors, allowing 2200 devices with packet delay budget of 200 ms.",gemini-3-flash-preview,mMTC,,False,Failed
+"Establish a slice for street lighting control nodes, supporting 3500 devices with uplink rates of 300 kbps.",gemini-3-flash-preview,mMTC,mMTC,True,Policy created successfully
+"Deploy a slice for weather stations in rural areas, allowing 900 devices with latency tolerance of 250 ms.",gemini-3-flash-preview,mMTC,mMTC,True,Policy created successfully
+"Create a slice for industrial condition monitoring sensors, supporting 1600 devices with uplink rates of 1 Mbps.",gemini-3-flash-preview,mMTC,mMTC,True,Policy created successfully
+"Provision a slice for smart water distribution sensors, allowing 2800 devices with packet delay budget of 120 ms.",gemini-3-flash-preview,mMTC,mMTC,True,Policy created successfully
+"Establish a slice for noise pollution monitoring units, supporting 1400 devices with uplink rates of 600 kbps.",gemini-3-flash-preview,mMTC,,False,Failed
+"Deploy a slice for pipeline pressure sensors, allowing 2000 devices with latency tolerance of 180 ms.",gemini-3-flash-preview,mMTC,,False,Failed
+"Create a slice for smart agriculture weather probes, supporting 1100 devices with uplink rates of 700 kbps.",gemini-3-flash-preview,mMTC,,False,Failed
+"Provision a slice for building management sensors in commercial zones, allowing 3200 devices with packet delay budget of 100 ms.",gemini-3-flash-preview,mMTC,mMTC,True,Policy created successfully
+"Establish a slice for public transportation telemetry sensors, supporting 1700 devices with uplink rates of 900 kbps.",gemini-3-flash-preview,mMTC,mMTC,True,Policy created successfully
+"Deploy a slice for smart irrigation controllers, allowing 2600 devices with latency tolerance of 200 ms.",gemini-3-flash-preview,mMTC,mMTC,True,Policy created successfully
+"Create a slice for cold-chain temperature sensors, supporting 1500 devices with uplink rates of 500 kbps.",gemini-3-flash-preview,mMTC,mMTC,True,Policy created successfully
+"Provision a slice for structural health monitoring sensors on bridges, allowing 800 devices with packet delay budget of 150 ms.",gemini-3-flash-preview,mMTC,mMTC,True,Policy created successfully
+"Establish a slice for city-wide asset tracking tags, supporting 4200 devices with uplink rates of 400 kbps.",gemini-3-flash-preview,mMTC,mMTC,True,Policy created successfully
+"Deploy a slice for smart recycling bin sensors, allowing 2300 devices with latency tolerance of 180 ms.",gemini-3-flash-preview,mMTC,mMTC,True,Policy created successfully
+"Create a slice for a mobile esports tournament, requiring downstream rates of 250 Mbps per device and packet delay budget of 12 ms.",gemini-3-flash-preview,eMBB,,False,Failed
+"Provision a slice for film editors working remotely on-site, allowing 60 devices with 400 Mbps downstream per device.",gemini-3-flash-preview,eMBB,,False,Failed
+"Establish a slice for city surveillance analysts reviewing HD feeds, requiring 200 Mbps downstream and latency under 20 ms.",gemini-3-flash-preview,eMBB,eMBB,True,Policy created successfully
+"Deploy a slice for interactive advertising screens, supporting 100 devices with downstream rates of 150 Mbps.",gemini-3-flash-preview,eMBB,,False,Failed
+"Create a slice for maritime passenger terminals, prioritizing user experience with 90 Mbps downstream per device.",gemini-3-flash-preview,eMBB,,False,Failed
+"Provision a slice for automated train door control systems, supporting 500 devices with latency capped at 4 ms.",gemini-3-flash-preview,uRRLC,,False,Failed
+"Establish a slice for robotic firefighting units, requiring uplink rates of 35 Mbps and packet delay budget of 3 ms.",gemini-3-flash-preview,uRRLC,uRRLC,True,Policy created successfully
+"Deploy a slice for collision avoidance systems at intersections, allowing 600 devices with latency under 5 ms.",gemini-3-flash-preview,uRRLC,,False,Failed
+"Create a slice for remote heavy machinery diagnostics, requiring downstream rates of 70 Mbps and latency of 6 ms.",gemini-3-flash-preview,uRRLC,uRRLC,True,Policy created successfully
+"Provision a slice for automated port gate operations, supporting 250 devices with packet delay budget of 4 ms.",gemini-3-flash-preview,uRRLC,uRRLC,True,Policy created successfully
+"Establish a slice for city bike availability sensors, allowing 3100 devices with uplink rates of 300 kbps.",gemini-3-flash-preview,mMTC,mMTC,True,Policy created successfully
+"Deploy a slice for smart vending machine telemetry, supporting 1900 devices with latency tolerance of 200 ms.",gemini-3-flash-preview,mMTC,,False,Failed
+"Create a slice for energy consumption sensors in industrial parks, allowing 2700 devices with uplink rates of 800 kbps.",gemini-3-flash-preview,mMTC,mMTC,True,Policy created successfully
+"Provision a slice for public restroom occupancy sensors, supporting 2100 devices with packet delay budget of 150 ms.",gemini-3-flash-preview,mMTC,mMTC,True,Policy created successfully
+"Establish a slice for smart bus stop information panels, allowing 1200 devices with uplink rates of 600 kbps.",gemini-3-flash-preview,mMTC,mMTC,True,Policy created successfully
+"Create a slice for immersive museum AR guides, requiring 180 Mbps downstream per device and latency of 15 ms.",gemini-3-flash-preview,eMBB,eMBB,True,Policy created successfully
+"Provision a slice for urban telepresence kiosks, allowing 90 devices with downstream rates of 300 Mbps.",gemini-3-flash-preview,eMBB,eMBB,True,Policy created successfully
+"Establish a slice for real-time map updates for ride-sharing fleets, supporting 400 devices with uplink rates of 45 Mbps.",gemini-3-flash-preview,eMBB,,False,Failed
+"Deploy a slice for live election coverage teams, requiring 250 Mbps uplink per device and packet delay budget of 18 ms.",gemini-3-flash-preview,eMBB,eMBB,True,Policy created successfully
+"Create a slice for city-wide WiMAX replacement broadband, supporting 700 devices with downstream rates of 85 Mbps.",gemini-3-flash-preview,eMBB,eMBB,True,Policy created successfully
+"Provision a slice for synchronized traffic camera control, allowing 350 devices with latency under 6 ms.",gemini-3-flash-preview,uRRLC,,False,Failed
+"Establish a slice for industrial alarm systems, supporting 900 devices with packet delay budget of 5 ms.",gemini-3-flash-preview,uRRLC,uRRLC,True,Policy created successfully
+"Deploy a slice for remote vehicle diagnostics in motion, requiring uplink rates of 25 Mbps and latency of 7 ms.",gemini-3-flash-preview,uRRLC,,False,Failed
+"Create a slice for automated toll gate controls, allowing 450 devices with latency capped at 6 ms.",gemini-3-flash-preview,uRRLC,,False,Failed
+"Provision a slice for coordinated drone light shows, supporting 500 devices with packet delay budget of 5 ms.",gemini-3-flash-preview,uRRLC,uRRLC,True,Policy created successfully
+"Establish a slice for environmental radiation sensors, allowing 1000 devices with uplink rates of 700 kbps.",gemini-3-flash-preview,mMTC,mMTC,True,Policy created successfully
+"Deploy a slice for smart locker systems, supporting 1800 devices with latency tolerance of 150 ms.",gemini-3-flash-preview,mMTC,mMTC,True,Policy created successfully
+"Create a slice for city fountain control sensors, allowing 900 devices with uplink rates of 400 kbps.",gemini-3-flash-preview,mMTC,,False,Failed
+"Provision a slice for coastal erosion monitoring sensors, supporting 1300 devices with packet delay budget of 200 ms.",gemini-3-flash-preview,mMTC,,False,Failed
+"Establish a slice for smart traffic sign telemetry, allowing 2400 devices with uplink rates of 500 kbps.",gemini-3-flash-preview,mMTC,mMTC,True,Policy created successfully
+"Create a slice for urban drone video inspections, requiring downstream rates of 220 Mbps and latency under 15 ms.",gemini-3-flash-preview,eMBB,eMBB,True,Policy created successfully
+"Provision a slice for live online education broadcasting, supporting 300 devices with downstream rates of 140 Mbps.",gemini-3-flash-preview,eMBB,,False,Failed
+"Establish a slice for pop-up business expos, allowing 500 devices with packet delay budget of 25 ms.",gemini-3-flash-preview,eMBB,eMBB,True,Policy created successfully
+"Deploy a slice for automated rail switch control, supporting 700 devices with latency capped at 4 ms.",gemini-3-flash-preview,uRRLC,,False,Failed
+"Create a slice for synchronized robotic welding, requiring uplink rates of 30 Mbps and packet delay budget of 2 ms.",gemini-3-flash-preview,uRRLC,uRRLC,True,Policy created successfully
+"Provision a slice for smart greenhouse climate sensors, allowing 1600 devices with latency tolerance of 180 ms.",gemini-3-flash-preview,mMTC,,False,Failed
+"Establish a slice for public safety siren monitoring, supporting 1100 devices with uplink rates of 600 kbps.",gemini-3-flash-preview,mMTC,,False,Failed
+"Deploy a slice for high-resolution mobile mapping vehicles, requiring 350 Mbps uplink per device and latency of 20 ms.",gemini-3-flash-preview,eMBB,,False,Failed
+"Create a slice for autonomous ferry navigation systems, allowing 90 devices with packet delay budget of 3 ms.",gemini-3-flash-preview,uRRLC,,False,Failed
+"Provision a slice for smart city soil moisture probes, supporting 2000 devices with uplink rates of 500 kbps.",gemini-3-flash-preview,mMTC,,False,Failed
+"Create a slice to support video journalists transmitting live footage from a downtown area, allowing up to 40 devices with downstream rates of 120 Mbps per device and a packet delay budget of 15 ms to keep streams smooth.",gemini-3-pro-preview,eMBB,eMBB,True,Policy created successfully
+"Provision a slice for a university campus event where attendees will upload and stream media, targeting uplink rates of 50 Mbps per device and downstream rates of 100 Mbps with latency capped at 20 ms.",gemini-3-pro-preview,eMBB,eMBB,True,Policy created successfully
+"Set up a slice for a shopping mall to improve customer mobile experience, supporting 300 devices with downstream speeds of 80 Mbps per device and a packet delay budget of 25 ms.",gemini-3-pro-preview,eMBB,eMBB,True,Policy created successfully
+"Deploy a slice for a media production crew using AR headsets, requiring downstream throughput of 300 Mbps per device and latency not exceeding 10 ms.",gemini-3-pro-preview,eMBB,eMBB,True,Policy created successfully
+"Establish a slice for commuters in a busy train station, optimized for high-capacity browsing with support for 500 devices and downstream rates of 60 Mbps per device.",gemini-3-pro-preview,eMBB,eMBB,True,Policy created successfully
+"Create a slice for a sports arena during live matches, prioritizing user experience with 150 Mbps downstream per device and packet delay budget of 15 ms.",gemini-3-pro-preview,eMBB,eMBB,True,Policy created successfully
+"Provision a slice for an outdoor music festival where attendees share video clips, allowing up to 800 devices with uplink rates of 40 Mbps per device.",gemini-3-pro-preview,eMBB,eMBB,True,Policy created successfully
+"Design a slice for a business district to support cloud-based applications, targeting 100 Mbps downstream per device and latency around 20 ms.",gemini-3-pro-preview,eMBB,eMBB,True,Policy created successfully
+"Deploy a slice for a convention center hosting tech demos, supporting 200 devices with 200 Mbps downstream rates and packet delay budget of 10 ms.",gemini-3-pro-preview,eMBB,eMBB,True,Policy created successfully
+"Create a slice to enhance mobile broadband along a highway corridor, ensuring downstream speeds of 90 Mbps per device and latency below 30 ms.",gemini-3-pro-preview,eMBB,eMBB,True,Policy created successfully
+"Provision a slice for a public square with heavy social media usage, supporting 600 devices and uplink rates of 35 Mbps per device.",gemini-3-pro-preview,eMBB,,False,Failed
+"Establish a slice for corporate offices using cloud desktops, with 120 Mbps downstream per device and packet delay budget of 15 ms.",gemini-3-pro-preview,eMBB,eMBB,True,Policy created successfully
+"Set up a slice for remote training sessions using VR, requiring 500 Mbps downstream per device and latency capped at 8 ms.",gemini-3-pro-preview,eMBB,eMBB,True,Policy created successfully
+"Create a slice for a harbor area supporting logistics staff tablets, allowing 150 devices with downstream rates of 70 Mbps.",gemini-3-pro-preview,eMBB,,False,Failed
+"Deploy a slice for tourists in a historical district, optimized for media consumption with 80 Mbps downstream per device and 25 ms latency.",gemini-3-pro-preview,eMBB,eMBB,True,Policy created successfully
+"Provision a slice for a TV broadcast van zone, prioritizing uplink capacity of 200 Mbps per device and packet delay budget of 12 ms.",gemini-3-pro-preview,eMBB,eMBB,True,Policy created successfully
+"Establish a slice for co-working spaces, supporting 250 devices with downstream speeds of 100 Mbps per device.",gemini-3-pro-preview,eMBB,eMBB,True,Policy created successfully
+"Create a slice for a retail analytics platform using video feeds, requiring 150 Mbps downstream and latency below 20 ms.",gemini-3-pro-preview,eMBB,eMBB,True,Policy created successfully
+"Deploy a slice for mobile gaming users in a city park, targeting 120 Mbps downstream per device and 10 ms latency.",gemini-3-pro-preview,eMBB,eMBB,True,Policy created successfully
+"Provision a slice for financial traders on the move, with 90 Mbps downstream per device and packet delay budget of 10 ms.",gemini-3-pro-preview,eMBB,eMBB,True,Policy created successfully
+"Create a slice to control autonomous delivery robots in an industrial zone, requiring packet delay budget of 3 ms and uplink rates of 20 Mbps per device.",gemini-3-pro-preview,uRRLC,uRRLC,True,Policy created successfully
+"Provision a slice for drone traffic management, supporting 60 devices with latency capped at 5 ms and downstream rates of 30 Mbps.",gemini-3-pro-preview,uRRLC,uRRLC,True,Policy created successfully
+"Establish a slice for automated guided vehicles in a factory, prioritizing ultra-low latency of 2 ms and uplink throughput of 25 Mbps.",gemini-3-pro-preview,uRRLC,uRRLC,True,Policy created successfully
+"Deploy a slice for remote crane operation at a port, requiring 1 ms packet delay budget and 50 Mbps downstream per device.",gemini-3-pro-preview,uRRLC,uRRLC,True,Policy created successfully
+"Create a slice for railway signaling systems, supporting 120 devices with latency not exceeding 4 ms.",gemini-3-pro-preview,uRRLC,,False,Failed
+"Provision a slice for emergency response vehicle coordination, targeting uplink rates of 40 Mbps and latency under 5 ms.",gemini-3-pro-preview,uRRLC,uRRLC,True,Policy created successfully
+"Establish a slice for robotic assembly lines, requiring downstream rates of 60 Mbps per device and packet delay budget of 3 ms.",gemini-3-pro-preview,uRRLC,uRRLC,True,Policy created successfully
+"Deploy a slice for power grid protection relays, supporting 300 devices with latency capped at 4 ms.",gemini-3-pro-preview,uRRLC,,False,Failed
+"Create a slice for autonomous bus control systems, allowing 80 devices with latency below 5 ms and uplink rates of 30 Mbps.",gemini-3-pro-preview,uRRLC,,False,Failed
+"Provision a slice for real-time traffic light coordination, requiring 10 Mbps uplink per device and packet delay budget of 6 ms.",gemini-3-pro-preview,uRRLC,,False,Failed
+"Establish a slice for remote medical equipment monitoring, prioritizing latency of 5 ms and downstream rates of 25 Mbps.",gemini-3-pro-preview,uRRLC,uRRLC,True,Policy created successfully
+"Deploy a slice for collaborative industrial robots, supporting 50 devices with latency capped at 2 ms.",gemini-3-pro-preview,uRRLC,uRRLC,True,Policy created successfully
+"Create a slice for precision agriculture machinery control, requiring uplink rates of 20 Mbps and packet delay budget of 7 ms.",gemini-3-pro-preview,uRRLC,uRRLC,True,Policy created successfully
+"Provision a slice for automated warehouse sorting systems, allowing 150 devices with latency under 5 ms.",gemini-3-pro-preview,uRRLC,uRRLC,True,Policy created successfully
+"Establish a slice for tunnel safety systems, supporting 400 devices with latency capped at 6 ms.",gemini-3-pro-preview,uRRLC,,False,Failed
+"Deploy a slice for real-time video feedback in remote inspections, requiring 80 Mbps downstream per device and latency of 5 ms.",gemini-3-pro-preview,uRRLC,eMBB,False,Policy created successfully
+"Create a slice for autonomous mining vehicles, allowing 70 devices with packet delay budget of 4 ms.",gemini-3-pro-preview,uRRLC,uRRLC,True,Policy created successfully
+"Provision a slice for industrial motion control networks, requiring latency not exceeding 2 ms and uplink rates of 15 Mbps.",gemini-3-pro-preview,uRRLC,uRRLC,True,Policy created successfully
+"Establish a slice for airport ground vehicle coordination, supporting 200 devices with latency capped at 5 ms.",gemini-3-pro-preview,uRRLC,,False,Failed
+"Deploy a slice for remote surgery assistance systems, requiring downstream rates of 1 Gbps per device and packet delay budget of 1 ms.",gemini-3-pro-preview,uRRLC,uRRLC,True,Policy created successfully
+"Create a slice for environmental sensors monitoring air quality across a city district, supporting up to 3000 devices with uplink rates of 1 Mbps per device.",gemini-3-pro-preview,mMTC,mMTC,True,Policy created successfully
+"Provision a slice for smart parking sensors, allowing 2500 devices with packet delay budget of 100 ms.",gemini-3-pro-preview,mMTC,mMTC,True,Policy created successfully
+"Establish a slice for utility metering infrastructure, supporting 4000 devices with uplink rates of 500 kbps per device.",gemini-3-pro-preview,mMTC,mMTC,True,Policy created successfully
+"Deploy a slice for waste management sensors, allowing 1800 devices with latency tolerance of 150 ms.",gemini-3-pro-preview,mMTC,,False,Failed
+"Create a slice for flood monitoring sensors along a river, supporting 1200 devices with uplink rates of 800 kbps.",gemini-3-pro-preview,mMTC,mMTC,True,Policy created successfully
+"Provision a slice for agricultural soil sensors, allowing 2200 devices with packet delay budget of 200 ms.",gemini-3-pro-preview,mMTC,,False,Failed
+"Establish a slice for street lighting control nodes, supporting 3500 devices with uplink rates of 300 kbps.",gemini-3-pro-preview,mMTC,mMTC,True,Policy created successfully
+"Deploy a slice for weather stations in rural areas, allowing 900 devices with latency tolerance of 250 ms.",gemini-3-pro-preview,mMTC,mMTC,True,Policy created successfully
+"Create a slice for industrial condition monitoring sensors, supporting 1600 devices with uplink rates of 1 Mbps.",gemini-3-pro-preview,mMTC,,False,Failed
+"Provision a slice for smart water distribution sensors, allowing 2800 devices with packet delay budget of 120 ms.",gemini-3-pro-preview,mMTC,mMTC,True,Policy created successfully
+"Establish a slice for noise pollution monitoring units, supporting 1400 devices with uplink rates of 600 kbps.",gemini-3-pro-preview,mMTC,mMTC,True,Policy created successfully
+"Deploy a slice for pipeline pressure sensors, allowing 2000 devices with latency tolerance of 180 ms.",gemini-3-pro-preview,mMTC,mMTC,True,Policy created successfully
+"Create a slice for smart agriculture weather probes, supporting 1100 devices with uplink rates of 700 kbps.",gemini-3-pro-preview,mMTC,mMTC,True,Policy created successfully
+"Provision a slice for building management sensors in commercial zones, allowing 3200 devices with packet delay budget of 100 ms.",gemini-3-pro-preview,mMTC,mMTC,True,Policy created successfully
+"Establish a slice for public transportation telemetry sensors, supporting 1700 devices with uplink rates of 900 kbps.",gemini-3-pro-preview,mMTC,mMTC,True,Policy created successfully
+"Deploy a slice for smart irrigation controllers, allowing 2600 devices with latency tolerance of 200 ms.",gemini-3-pro-preview,mMTC,mMTC,True,Policy created successfully
+"Create a slice for cold-chain temperature sensors, supporting 1500 devices with uplink rates of 500 kbps.",gemini-3-pro-preview,mMTC,mMTC,True,Policy created successfully
+"Provision a slice for structural health monitoring sensors on bridges, allowing 800 devices with packet delay budget of 150 ms.",gemini-3-pro-preview,mMTC,,False,Failed
+"Establish a slice for city-wide asset tracking tags, supporting 4200 devices with uplink rates of 400 kbps.",gemini-3-pro-preview,mMTC,mMTC,True,Policy created successfully
+"Deploy a slice for smart recycling bin sensors, allowing 2300 devices with latency tolerance of 180 ms.",gemini-3-pro-preview,mMTC,mMTC,True,Policy created successfully
+"Create a slice for a mobile esports tournament, requiring downstream rates of 250 Mbps per device and packet delay budget of 12 ms.",gemini-3-pro-preview,eMBB,eMBB,True,Policy created successfully
+"Provision a slice for film editors working remotely on-site, allowing 60 devices with 400 Mbps downstream per device.",gemini-3-pro-preview,eMBB,,False,Failed
+"Establish a slice for city surveillance analysts reviewing HD feeds, requiring 200 Mbps downstream and latency under 20 ms.",gemini-3-pro-preview,eMBB,eMBB,True,Policy created successfully
+"Deploy a slice for interactive advertising screens, supporting 100 devices with downstream rates of 150 Mbps.",gemini-3-pro-preview,eMBB,eMBB,True,Policy created successfully
+"Create a slice for maritime passenger terminals, prioritizing user experience with 90 Mbps downstream per device.",gemini-3-pro-preview,eMBB,eMBB,True,Policy created successfully
+"Provision a slice for automated train door control systems, supporting 500 devices with latency capped at 4 ms.",gemini-3-pro-preview,uRRLC,uRRLC,True,Policy created successfully
+"Establish a slice for robotic firefighting units, requiring uplink rates of 35 Mbps and packet delay budget of 3 ms.",gemini-3-pro-preview,uRRLC,uRRLC,True,Policy created successfully
+"Deploy a slice for collision avoidance systems at intersections, allowing 600 devices with latency under 5 ms.",gemini-3-pro-preview,uRRLC,uRRLC,True,Policy created successfully
+"Create a slice for remote heavy machinery diagnostics, requiring downstream rates of 70 Mbps and latency of 6 ms.",gemini-3-pro-preview,uRRLC,uRRLC,True,Policy created successfully
+"Provision a slice for automated port gate operations, supporting 250 devices with packet delay budget of 4 ms.",gemini-3-pro-preview,uRRLC,uRRLC,True,Policy created successfully
+"Establish a slice for city bike availability sensors, allowing 3100 devices with uplink rates of 300 kbps.",gemini-3-pro-preview,mMTC,mMTC,True,Policy created successfully
+"Deploy a slice for smart vending machine telemetry, supporting 1900 devices with latency tolerance of 200 ms.",gemini-3-pro-preview,mMTC,mMTC,True,Policy created successfully
+"Create a slice for energy consumption sensors in industrial parks, allowing 2700 devices with uplink rates of 800 kbps.",gemini-3-pro-preview,mMTC,mMTC,True,Policy created successfully
+"Provision a slice for public restroom occupancy sensors, supporting 2100 devices with packet delay budget of 150 ms.",gemini-3-pro-preview,mMTC,,False,Failed
+"Establish a slice for smart bus stop information panels, allowing 1200 devices with uplink rates of 600 kbps.",gemini-3-pro-preview,mMTC,,False,Failed
+"Create a slice for immersive museum AR guides, requiring 180 Mbps downstream per device and latency of 15 ms.",gemini-3-pro-preview,eMBB,eMBB,True,Policy created successfully
+"Provision a slice for urban telepresence kiosks, allowing 90 devices with downstream rates of 300 Mbps.",gemini-3-pro-preview,eMBB,eMBB,True,Policy created successfully
+"Establish a slice for real-time map updates for ride-sharing fleets, supporting 400 devices with uplink rates of 45 Mbps.",gemini-3-pro-preview,eMBB,eMBB,True,Policy created successfully
+"Deploy a slice for live election coverage teams, requiring 250 Mbps uplink per device and packet delay budget of 18 ms.",gemini-3-pro-preview,eMBB,,False,Failed
+"Create a slice for city-wide WiMAX replacement broadband, supporting 700 devices with downstream rates of 85 Mbps.",gemini-3-pro-preview,eMBB,eMBB,True,Policy created successfully
+"Provision a slice for synchronized traffic camera control, allowing 350 devices with latency under 6 ms.",gemini-3-pro-preview,uRRLC,,False,Failed
+"Establish a slice for industrial alarm systems, supporting 900 devices with packet delay budget of 5 ms.",gemini-3-pro-preview,uRRLC,uRRLC,True,Policy created successfully
+"Deploy a slice for remote vehicle diagnostics in motion, requiring uplink rates of 25 Mbps and latency of 7 ms.",gemini-3-pro-preview,uRRLC,uRRLC,True,Policy created successfully
+"Create a slice for automated toll gate controls, allowing 450 devices with latency capped at 6 ms.",gemini-3-pro-preview,uRRLC,uRRLC,True,Policy created successfully
+"Provision a slice for coordinated drone light shows, supporting 500 devices with packet delay budget of 5 ms.",gemini-3-pro-preview,uRRLC,,False,Failed
+"Establish a slice for environmental radiation sensors, allowing 1000 devices with uplink rates of 700 kbps.",gemini-3-pro-preview,mMTC,,False,Failed
+"Deploy a slice for smart locker systems, supporting 1800 devices with latency tolerance of 150 ms.",gemini-3-pro-preview,mMTC,,False,Failed
+"Create a slice for city fountain control sensors, allowing 900 devices with uplink rates of 400 kbps.",gemini-3-pro-preview,mMTC,mMTC,True,Policy created successfully
+"Provision a slice for coastal erosion monitoring sensors, supporting 1300 devices with packet delay budget of 200 ms.",gemini-3-pro-preview,mMTC,mMTC,True,Policy created successfully
+"Establish a slice for smart traffic sign telemetry, allowing 2400 devices with uplink rates of 500 kbps.",gemini-3-pro-preview,mMTC,mMTC,True,Policy created successfully
+"Create a slice for urban drone video inspections, requiring downstream rates of 220 Mbps and latency under 15 ms.",gemini-3-pro-preview,eMBB,eMBB,True,Policy created successfully
+"Provision a slice for live online education broadcasting, supporting 300 devices with downstream rates of 140 Mbps.",gemini-3-pro-preview,eMBB,eMBB,True,Policy created successfully
+"Establish a slice for pop-up business expos, allowing 500 devices with packet delay budget of 25 ms.",gemini-3-pro-preview,eMBB,eMBB,True,Policy created successfully
+"Deploy a slice for automated rail switch control, supporting 700 devices with latency capped at 4 ms.",gemini-3-pro-preview,uRRLC,uRRLC,True,Policy created successfully
+"Create a slice for synchronized robotic welding, requiring uplink rates of 30 Mbps and packet delay budget of 2 ms.",gemini-3-pro-preview,uRRLC,uRRLC,True,Policy created successfully
+"Provision a slice for smart greenhouse climate sensors, allowing 1600 devices with latency tolerance of 180 ms.",gemini-3-pro-preview,mMTC,mMTC,True,Policy created successfully
+"Establish a slice for public safety siren monitoring, supporting 1100 devices with uplink rates of 600 kbps.",gemini-3-pro-preview,mMTC,,False,Failed
+"Deploy a slice for high-resolution mobile mapping vehicles, requiring 350 Mbps uplink per device and latency of 20 ms.",gemini-3-pro-preview,eMBB,eMBB,True,Policy created successfully
+"Create a slice for autonomous ferry navigation systems, allowing 90 devices with packet delay budget of 3 ms.",gemini-3-pro-preview,uRRLC,,False,Failed
+"Provision a slice for smart city soil moisture probes, supporting 2000 devices with uplink rates of 500 kbps.",gemini-3-pro-preview,mMTC,mMTC,True,Policy created successfully

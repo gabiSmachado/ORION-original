@@ -1,0 +1,7 @@
+model,total,correct,has_prediction,accuracy_%,prediction_rate_%
+claude-opus-4-5,101,100,101,99.0,100.0
+claude-sonnet-4-5,100,13,17,13.0,17.0
+gemini-3-flash-preview,100,66,66,66.0,66.0
+gemini-3-pro-preview,100,77,78,77.0,78.0
+gpt-5,100,96,100,96.0,100.0
+gpt-5-nano,100,90,97,90.0,97.0
