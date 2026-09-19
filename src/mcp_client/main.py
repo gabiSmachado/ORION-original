@@ -50,6 +50,8 @@ try:
         api_key = os.getenv("ANTHROPIC_API_KEY")
     elif llm == "gemini":
         api_key = os.getenv("GEMINI_API_KEY")
+    elif llm == "qwen":
+        api_key = os.getenv("OPENROUTER_API_KEY")
 except EnvironmentError:
     print("Not found an API_KEY in your environment or .env")
     sys.exit(1)

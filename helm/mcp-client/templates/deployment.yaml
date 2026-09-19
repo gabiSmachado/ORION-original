@@ -62,6 +62,13 @@ spec:
                   name: {{ if .Values.gemini.existingSecret }}{{ .Values.gemini.existingSecret }}{{ else }}{{ include "mcp-client.fullname" . }}-gemini{{ end }}
                   key: {{ .Values.gemini.secretKey }}
             {{- end }}
+            {{- if or .Values.qwen.apiKey .Values.qwen.existingSecret }}
+            - name: OPENROUTER_API_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: {{ if .Values.qwen.existingSecret }}{{ .Values.qwen.existingSecret }}{{ else }}{{ include "mcp-client.fullname" . }}-qwen{{ end }}
+                  key: {{ .Values.qwen.secretKey }}
+            {{- end }}            
           volumeMounts:
             {{- if .Values.config.enabled }}
             - name: config

@@ -3,7 +3,7 @@
 
 image:
   repository: docker.io/gabrielasmachado/mcp_client
-  tag: "d827051-dirty"
+  tag: "cf9713d-dirty"
   pullPolicy: Always
   # pullSecrets: [] # e.g. - name: myregistrysecret
 
@@ -32,6 +32,10 @@ gemini:
   existingSecret: "gemini-key"
   secretKey: GEMINI_API_KEY
 
+qwen:
+  existingSecret: "openrouter-qwen-key"
+  secretKey: OPENROUTER_API_KEY
+
 service:
   type: ClusterIP
   port: 9100
@@ -49,8 +53,9 @@ config:
     host: "rapp.ricrapp.svc.cluster.local"
     port: 8090
   llm:
-    name: "anthropic"
-    model: "claude-sonnet-4-5"
+    name: "qwen"
+    model: "qwen/qwen3-235b-a22b"
+
   results_path: "/app"
 
 # Extra labels to add to all resources
