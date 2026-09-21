@@ -1,2 +1,101 @@
 intent_id;slice_type;intent
 1;eMBB;Create a slice to support video journalists transmitting live footage from a downtown area, allowing up to 40 devices with downstream rates of 120 Mbps per device and a packet delay budget of 15 ms to keep streams smooth.
+2;eMBB;Provision a slice for a university campus event where attendees will upload and stream media, targeting uplink rates of 50 Mbps per device and downstream rates of 100 Mbps with latency capped at 20 ms.
+3;eMBB;Set up a slice for a shopping mall to improve customer mobile experience, supporting 300 devices with downstream speeds of 80 Mbps per device and a packet delay budget of 25 ms.
+4;eMBB;Deploy a slice for a media production crew using AR headsets, requiring downstream throughput of 300 Mbps per device and latency not exceeding 10 ms.
+5;eMBB;Establish a slice for commuters in a busy train station, optimized for high-capacity browsing with support for 500 devices and downstream rates of 60 Mbps per device.
+6;eMBB;Create a slice for a sports arena during live matches, prioritizing user experience with 150 Mbps downstream per device and packet delay budget of 15 ms.
+7;eMBB;Provision a slice for an outdoor music festival where attendees share video clips, allowing up to 800 devices with uplink rates of 40 Mbps per device.
+8;eMBB;Design a slice for a business district to support cloud-based applications, targeting 100 Mbps downstream per device and latency around 20 ms.
+9;eMBB;Deploy a slice for a convention center hosting tech demos, supporting 200 devices with 200 Mbps downstream rates and packet delay budget of 10 ms.
+10;eMBB;Create a slice to enhance mobile broadband along a highway corridor, ensuring downstream speeds of 90 Mbps per device and latency below 30 ms.
+11;eMBB;Provision a slice for a public square with heavy social media usage, supporting 600 devices and uplink rates of 35 Mbps per device.
+12;eMBB;Establish a slice for corporate offices using cloud desktops, with 120 Mbps downstream per device and packet delay budget of 15 ms.
+13;eMBB;Set up a slice for remote training sessions using VR, requiring 500 Mbps downstream per device and latency capped at 8 ms.
+14;eMBB;Create a slice for a harbor area supporting logistics staff tablets, allowing 150 devices with downstream rates of 70 Mbps.
+15;eMBB;Deploy a slice for tourists in a historical district, optimized for media consumption with 80 Mbps downstream per device and 25 ms latency.
+16;eMBB;Provision a slice for a TV broadcast van zone, prioritizing uplink capacity of 200 Mbps per device and packet delay budget of 12 ms.
+17;eMBB;Establish a slice for co-working spaces, supporting 250 devices with downstream speeds of 100 Mbps per device.
+18;eMBB;Create a slice for a retail analytics platform using video feeds, requiring 150 Mbps downstream and latency below 20 ms.
+19;eMBB;Deploy a slice for mobile gaming users in a city park, targeting 120 Mbps downstream per device and 10 ms latency.
+20;eMBB;Provision a slice for financial traders on the move, with 90 Mbps downstream per device and packet delay budget of 10 ms.
+21;uRRLC;Create a slice to control autonomous delivery robots in an industrial zone, requiring packet delay budget of 3 ms and uplink rates of 20 Mbps per device.
+22;uRRLC;Provision a slice for drone traffic management, supporting 60 devices with latency capped at 5 ms and downstream rates of 30 Mbps.
+23;uRRLC;Establish a slice for automated guided vehicles in a factory, prioritizing ultra-low latency of 2 ms and uplink throughput of 25 Mbps.
+24;uRRLC;Deploy a slice for remote crane operation at a port, requiring 1 ms packet delay budget and 50 Mbps downstream per device.
+25;uRRLC;Create a slice for railway signaling systems, supporting 120 devices with latency not exceeding 4 ms.
+26;uRRLC;Provision a slice for emergency response vehicle coordination, targeting uplink rates of 40 Mbps and latency under 5 ms.
+27;uRRLC;Establish a slice for robotic assembly lines, requiring downstream rates of 60 Mbps per device and packet delay budget of 3 ms.
+28;uRRLC;Deploy a slice for power grid protection relays, supporting 300 devices with latency capped at 4 ms.
+29;uRRLC;Create a slice for autonomous bus control systems, allowing 80 devices with latency below 5 ms and uplink rates of 30 Mbps.
+30;uRRLC;Provision a slice for real-time traffic light coordination, requiring 10 Mbps uplink per device and packet delay budget of 6 ms.
+31;uRRLC;Establish a slice for remote medical equipment monitoring, prioritizing latency of 5 ms and downstream rates of 25 Mbps.
+32;uRRLC;Deploy a slice for collaborative industrial robots, supporting 50 devices with latency capped at 2 ms.
+33;uRRLC;Create a slice for precision agriculture machinery control, requiring uplink rates of 20 Mbps and packet delay budget of 7 ms.
+34;uRRLC;Provision a slice for automated warehouse sorting systems, allowing 150 devices with latency under 5 ms.
+35;uRRLC;Establish a slice for tunnel safety systems, supporting 400 devices with latency capped at 6 ms.
+36;uRRLC;Deploy a slice for real-time video feedback in remote inspections, requiring 80 Mbps downstream per device and latency of 5 ms.
+37;uRRLC;Create a slice for autonomous mining vehicles, allowing 70 devices with packet delay budget of 4 ms.
+38;uRRLC;Provision a slice for industrial motion control networks, requiring latency not exceeding 2 ms and uplink rates of 15 Mbps.
+39;uRRLC;Establish a slice for airport ground vehicle coordination, supporting 200 devices with latency capped at 5 ms.
+40;uRRLC;Deploy a slice for remote surgery assistance systems, requiring downstream rates of 1 Gbps per device and packet delay budget of 1 ms.
+41;mMTC;Create a slice for environmental sensors monitoring air quality across a city district, supporting up to 3000 devices with uplink rates of 1 Mbps per device.
+42;mMTC;Provision a slice for smart parking sensors, allowing 2500 devices with packet delay budget of 100 ms.
+43;mMTC;Establish a slice for utility metering infrastructure, supporting 4000 devices with uplink rates of 500 kbps per device.
+44;mMTC;Deploy a slice for waste management sensors, allowing 1800 devices with latency tolerance of 150 ms.
+45;mMTC;Create a slice for flood monitoring sensors along a river, supporting 1200 devices with uplink rates of 800 kbps.
+46;mMTC;Provision a slice for agricultural soil sensors, allowing 2200 devices with packet delay budget of 200 ms.
+47;mMTC;Establish a slice for street lighting control nodes, supporting 3500 devices with uplink rates of 300 kbps.
+48;mMTC;Deploy a slice for weather stations in rural areas, allowing 900 devices with latency tolerance of 250 ms.
+49;mMTC;Create a slice for industrial condition monitoring sensors, supporting 1600 devices with uplink rates of 1 Mbps.
+50;mMTC;Provision a slice for smart water distribution sensors, allowing 2800 devices with packet delay budget of 120 ms.
+51;mMTC;Establish a slice for noise pollution monitoring units, supporting 1400 devices with uplink rates of 600 kbps.
+52;mMTC;Deploy a slice for pipeline pressure sensors, allowing 2000 devices with latency tolerance of 180 ms.
+53;mMTC;Create a slice for smart agriculture weather probes, supporting 1100 devices with uplink rates of 700 kbps.
+54;mMTC;Provision a slice for building management sensors in commercial zones, allowing 3200 devices with packet delay budget of 100 ms.
+55;mMTC;Establish a slice for public transportation telemetry sensors, supporting 1700 devices with uplink rates of 900 kbps.
+56;mMTC;Deploy a slice for smart irrigation controllers, allowing 2600 devices with latency tolerance of 200 ms.
+57;mMTC;Create a slice for cold-chain temperature sensors, supporting 1500 devices with uplink rates of 500 kbps.
+58;mMTC;Provision a slice for structural health monitoring sensors on bridges, allowing 800 devices with packet delay budget of 150 ms.
+59;mMTC;Establish a slice for city-wide asset tracking tags, supporting 4200 devices with uplink rates of 400 kbps.
+60;mMTC;Deploy a slice for smart recycling bin sensors, allowing 2300 devices with latency tolerance of 180 ms.
+61;eMBB;Create a slice for a mobile esports tournament, requiring downstream rates of 250 Mbps per device and packet delay budget of 12 ms.
+62;eMBB;Provision a slice for film editors working remotely on-site, allowing 60 devices with 400 Mbps downstream per device.
+63;eMBB;Establish a slice for city surveillance analysts reviewing HD feeds, requiring 200 Mbps downstream and latency under 20 ms.
+64;eMBB;Deploy a slice for interactive advertising screens, supporting 100 devices with downstream rates of 150 Mbps.
+65;eMBB;Create a slice for maritime passenger terminals, prioritizing user experience with 90 Mbps downstream per device.
+66;uRRLC;Provision a slice for automated train door control systems, supporting 500 devices with latency capped at 4 ms.
+67;uRRLC;Establish a slice for robotic firefighting units, requiring uplink rates of 35 Mbps and packet delay budget of 3 ms.
+68;uRRLC;Deploy a slice for collision avoidance systems at intersections, allowing 600 devices with latency under 5 ms.
+69;uRRLC;Create a slice for remote heavy machinery diagnostics, requiring downstream rates of 70 Mbps and latency of 6 ms.
+70;uRRLC;Provision a slice for automated port gate operations, supporting 250 devices with packet delay budget of 4 ms.
+71;mMTC;Establish a slice for city bike availability sensors, allowing 3100 devices with uplink rates of 300 kbps.
+72;mMTC;Deploy a slice for smart vending machine telemetry, supporting 1900 devices with latency tolerance of 200 ms.
+73;mMTC;Create a slice for energy consumption sensors in industrial parks, allowing 2700 devices with uplink rates of 800 kbps.
+74;mMTC;Provision a slice for public restroom occupancy sensors, supporting 2100 devices with packet delay budget of 150 ms.
+75;mMTC;Establish a slice for smart bus stop information panels, allowing 1200 devices with uplink rates of 600 kbps.
+76;eMBB;Create a slice for immersive museum AR guides, requiring 180 Mbps downstream per device and latency of 15 ms.
+77;eMBB;Provision a slice for urban telepresence kiosks, allowing 90 devices with downstream rates of 300 Mbps.
+78;eMBB;Establish a slice for real-time map updates for ride-sharing fleets, supporting 400 devices with uplink rates of 45 Mbps.
+79;eMBB;Deploy a slice for live election coverage teams, requiring 250 Mbps uplink per device and packet delay budget of 18 ms.
+80;eMBB;Create a slice for city-wide WiMAX replacement broadband, supporting 700 devices with downstream rates of 85 Mbps.
+81;uRRLC;Provision a slice for synchronized traffic camera control, allowing 350 devices with latency under 6 ms.
+82;uRRLC;Establish a slice for industrial alarm systems, supporting 900 devices with packet delay budget of 5 ms.
+83;uRRLC;Deploy a slice for remote vehicle diagnostics in motion, requiring uplink rates of 25 Mbps and latency of 7 ms.
+84;uRRLC;Create a slice for automated toll gate controls, allowing 450 devices with latency capped at 6 ms.
+85;uRRLC;Provision a slice for coordinated drone light shows, supporting 500 devices with packet delay budget of 5 ms.
+86;mMTC;Establish a slice for environmental radiation sensors, allowing 1000 devices with uplink rates of 700 kbps.
+87;mMTC;Deploy a slice for smart locker systems, supporting 1800 devices with latency tolerance of 150 ms.
+88;mMTC;Create a slice for city fountain control sensors, allowing 900 devices with uplink rates of 400 kbps.
+89;mMTC;Provision a slice for coastal erosion monitoring sensors, supporting 1300 devices with packet delay budget of 200 ms.
+90;mMTC;Establish a slice for smart traffic sign telemetry, allowing 2400 devices with uplink rates of 500 kbps.
+91;eMBB;Create a slice for urban drone video inspections, requiring downstream rates of 220 Mbps and latency under 15 ms.
+92;eMBB;Provision a slice for live online education broadcasting, supporting 300 devices with downstream rates of 140 Mbps.
+93;eMBB;Establish a slice for pop-up business expos, allowing 500 devices with packet delay budget of 25 ms.
+94;uRRLC;Deploy a slice for automated rail switch control, supporting 700 devices with latency capped at 4 ms.
+95;uRRLC;Create a slice for synchronized robotic welding, requiring uplink rates of 30 Mbps and packet delay budget of 2 ms.
+96;mMTC;Provision a slice for smart greenhouse climate sensors, allowing 1600 devices with latency tolerance of 180 ms.
+97;mMTC;Establish a slice for public safety siren monitoring, supporting 1100 devices with uplink rates of 600 kbps.
+98;eMBB;Deploy a slice for high-resolution mobile mapping vehicles, requiring 350 Mbps uplink per device and latency of 20 ms.
+99;uRRLC;Create a slice for autonomous ferry navigation systems, allowing 90 devices with packet delay budget of 3 ms.
+100;mMTC;Provision a slice for smart city soil moisture probes, supporting 2000 devices with uplink rates of 500 kbps.

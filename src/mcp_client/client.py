@@ -14,6 +14,7 @@ import utils.resolver as resolver
 from pathlib import Path
 from utils.results_file import save_results
 
+
 class MCPClient:
     def __init__(self, logger: logging, rapp: str, file_path: Path):
         self.session: Optional[ClientSession] = None
@@ -78,20 +79,19 @@ class MCPClient:
                     base_url="https://openrouter.ai/api/v1",
                     api_key=api_key,
                 )
-                for tool in mcp_tools:
-                    self.logger.info(f"tool {tool}")                    
-                    if "function" in tool:                   
-                        self.tools.append(tool)
-                        continue
-                    self.tools.append({
-                        "type": "function",
-                        "function": {
-                            "name": tool.name,
-                            "description": tool.description,
-                            "parameters": tool.input_schema,
-                        },
-                    })
-                
+                for tool in mcp_tools:              
+                    self.tools = [
+                        {
+                            "type": "function",
+                            "function": {
+                                "name": tool.name,
+                                "description": tool.description,
+                                "parameters": self.get_schema(tool),
+                            }
+                        }
+                        for tool in mcp_tools
+                    ]
+                    
             elif llm_name == "gemini":
                 self.llm =  genai.Client(api_key=api_key)
                 tools_declaration = []
@@ -400,111 +400,79 @@ class MCPClient:
                 raise
 
     async def call_qwen(self, intent: str):
-        self.messages.append({"role": "user", "content": intent})
-        results_log = {}
+        user_intent = {"role": "user", "content": intent}
+        self.messages.append(user_intent)
+        results_log = {"intent": intent}
         try:
             response = self.llm.chat.completions.create(
                 model=self.llm_model,
                 messages=self.messages,
                 tools=self.tools,
             )
-            results_log = {"intent": intent}
+
             self.logger.info(f"Assistant response: {response}")
-
+            
             message = response.choices[0].message
-
+            
+            results_log = {"intent": intent, "intent_processing": str(response)}
+            
             if not message.tool_calls:
                 assistant_message = {"role": "assistant", "content": message.content or ""}
                 self.messages.append(assistant_message)
                 self.logger.info("No tool_call found; returning text response.")
-                results_log = {"intent": intent, "intent_processing": str(response)}
                 return assistant_message
 
-            self.messages.append({
-                "role": "assistant",
-                "content": message.content or "",
-                "tool_calls": [
-                    {
-                        "id": tc.id,
-                        "type": "function",
-                        "function": {
-                            "name": tc.function.name,
-                            "arguments": tc.function.arguments,
-                        },
-                    }
-                    for tc in message.tool_calls
-                ],
-            })
-
-            first_tool_output = None
-            first_tool_result = None
-
-            for tc in message.tool_calls:
-                tool_name = tc.function.name
-                tool_args = tc.function.arguments  # string JSON
+            for item in message.tool_calls:
+                tool_name = item.function.name
+                tool_args = item.function.arguments
+                call_id = item.id
                 self.logger.info(f"Executing tool: {tool_name} with args: {tool_args}")
 
                 try:
                     tool_result = await self.session.call_tool(
-                        tool_name, json.loads(tool_args or "{}")
+                        tool_name, json.loads(tool_args)
                     )
                     self.logger.info(f"Tool result: {tool_result}")
+                    results_log = {"intent": intent, "intent_processing": str(response), "tool_call": str(tool_result)}
                 except Exception as e:
                     error_msg = f"Tool execution failed for {tool_name}: {str(e)}"
                     self.logger.error(error_msg)
                     raise Exception(error_msg)
 
-                tool_output = ""
+   
                 if getattr(tool_result, "content", None):
                     block = tool_result.content[0]
                     tool_output = getattr(block, "text", None) or str(block)
+                    self.messages.append({
+                        "role": "user",
+                        "content": f"Tool {tool_name} output (call_id={call_id}):\n{tool_output}"
+                    })
+                    slice = json.loads(tool_output)["message"]
 
-                self.messages.append({
-                    "role": "tool",
-                    "tool_call_id": tc.id,
-                    "content": tool_output,
-                })
+                    self.logger.info("Setting policy type.")
+                    slice_type_response = self.llm.chat.completions.create(
+                        model=self.llm_model,
+                        messages=[
+                            {"role": "system", "content": self.instructions},
+                            {"role": "user", "content": intent},
+                        ],
+                    )
+                    slice_type = slice_type_response.choices[0].message.content
 
-                if first_tool_output is None:
-                    first_tool_output = tool_output
-                    first_tool_result = tool_result
+                    payload = json.dumps({
+                        "sliceDescription": slice,
+                        "sliceType": slice_type,
+                    })
+                    policy = await self.slice_request(payload)
 
-            results_log = {
-                "intent": intent,
-                "intent_processing": str(response),
-                "tool_call": str(first_tool_result),
-            }
-
-            if not first_tool_output:
-                self.logger.warning("Tool returned no content; nothing to send to slice_request.")
-                return None
-
-            slice_description = json.loads(first_tool_output)["message"]
-
-            self.logger.info("Setting policy type.")
-            slice_type_response = self.llm.chat.completions.create(
-                model=self.llm_model,
-                messages=[
-                    {"role": "system", "content": self.instructions},
-                    {"role": "user", "content": intent},
-                ],
-            )
-            slice_type = slice_type_response.choices[0].message.content
-
-            payload = json.dumps({
-                "sliceDescription": slice_description,
-                "sliceType": slice_type,
-            })
-            policy = await self.slice_request(payload)
-
-            results_log = {
-                "intent": intent,
-                "intent_processing": str(response),
-                "tool_call": str(first_tool_result),
-                "type_definition": str(slice_type_response),
-                "policy": policy.text,
-            }
-            return policy.text
+                    results_log = {
+                        "intent": intent,
+                        "intent_processing": str(response),
+                        "tool_call": str(tool_result),
+                        "type_definition": str(slice_type_response),
+                        "policy": policy.text,
+                    }
+                    return policy.text
 
         except Exception as e:
             self.logger.error(f"Error calling LLM: {e}")
@@ -514,6 +482,7 @@ class MCPClient:
                 self.logger.info("Saving results file.")
                 save_results(results_log, self.result_file_path)
                 self.logger.info("File saved successfully.")
+                self.messages.clear()
             except Exception as e:
                 self.logger.error(f"Error saving results file: {e}")
                 raise
@@ -644,3 +613,17 @@ class MCPClient:
         except Exception as e:
             self.logger.error(f"Error creating policy instance.: {str(e)}")
             raise  
+
+    @staticmethod
+    def get_schema(tool):
+        empty = {"type": "object", "properties": {}}
+        for attr in ("inputSchema", "input_schema", "parameters"):
+            value = getattr(tool, attr, None)
+            if value is None and isinstance(tool, dict):
+                value = tool.get(attr)
+            if value:
+                schema = dict(value)
+                schema.setdefault("type", "object")
+                schema.setdefault("properties", {})
+                return schema
+        return empty
