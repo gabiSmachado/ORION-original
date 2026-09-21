@@ -3,7 +3,7 @@
 
 image:
   repository: docker.io/gabrielasmachado/mcp_client
-  tag: "ebaf493-dirty"
+  tag: "3a3a1ed"
   pullPolicy: Always
   # pullSecrets: [] # e.g. - name: myregistrysecret
 
