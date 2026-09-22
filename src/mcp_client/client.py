@@ -78,9 +78,8 @@ class MCPClient:
                 self.llm =  OpenAI(
                     base_url="https://openrouter.ai/api/v1",
                     api_key=api_key,
-                )
-                for tool in mcp_tools:              
-                    self.tools = [
+                )            
+                self.tools = [
                         {
                             "type": "function",
                             "function": {
@@ -90,7 +89,7 @@ class MCPClient:
                             }
                         }
                         for tool in mcp_tools
-                    ]
+                ]
                     
             elif llm_name == "gemini":
                 self.llm =  genai.Client(api_key=api_key)
@@ -443,6 +442,7 @@ class MCPClient:
                 if getattr(tool_result, "content", None):
                     block = tool_result.content[0]
                     tool_output = getattr(block, "text", None) or str(block)
+                    self.logger.info(f"Teste: {block}")
                     self.messages.append({
                         "role": "user",
                         "content": f"Tool {tool_name} output (call_id={call_id}):\n{tool_output}"

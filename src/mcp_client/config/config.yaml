@@ -15,6 +15,6 @@ rapp:
 
 llm:
   name: "qwen"
-  model: "qwen/qwen3-235b-a22b"
+  model: "qwen3-30b-a3b-instruct-2507"
 
 results_path: "/app"
