@@ -32,7 +32,6 @@ class MCPClient:
     async def set_llm(self, llm_name:str,llm_model:str, api_key:str):
         try:
             self.logger.info(f"Setting llm {llm_name} - model {llm_model}")
-            
             self.llm_name = llm_name
             self.llm_model = llm_model
             mcp_tools = await self.get_mcp_tools()
@@ -407,6 +406,13 @@ class MCPClient:
                 model=self.llm_model,
                 messages=self.messages,
                 tools=self.tools,
+                max_tokens=1000,
+                extra_body={
+                    "provider": {
+                            "only": ["alibaba"],
+                            "allow_fallbacks": False
+                        }
+                }
             )
 
             self.logger.info(f"Assistant response: {response}")
@@ -438,7 +444,11 @@ class MCPClient:
                     self.logger.error(error_msg)
                     raise Exception(error_msg)
 
-   
+                if tool_result.is_error:
+                    error_msg = f"Tool {tool_name} returned an error: {tool_result.content[0].text if tool_result.content else tool_result}"
+                    self.logger.error(error_msg)
+                    raise Exception(error_msg)
+
                 if getattr(tool_result, "content", None):
                     block = tool_result.content[0]
                     tool_output = getattr(block, "text", None) or str(block)
@@ -456,6 +466,13 @@ class MCPClient:
                             {"role": "system", "content": self.instructions},
                             {"role": "user", "content": intent},
                         ],
+                        max_tokens=1000,
+                        extra_body={
+                            "provider": {
+                                    "only": ["alibaba"],
+                                    "allow_fallbacks": False
+                                }
+                        }
                     )
                     slice_type = slice_type_response.choices[0].message.content
 
@@ -482,7 +499,7 @@ class MCPClient:
                 self.logger.info("Saving results file.")
                 save_results(results_log, self.result_file_path)
                 self.logger.info("File saved successfully.")
-                self.messages.clear()
+                self.messages = []
             except Exception as e:
                 self.logger.error(f"Error saving results file: {e}")
                 raise

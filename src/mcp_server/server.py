@@ -26,16 +26,19 @@ async def create_session(body: CreateSession) -> Dict[str, Any]:
     under messageParsed.
     """
     url = f"{API_ROOT}/sessions"
-    body = body.model_dump()
-    try: 
+    body = body.model_dump(mode="json")
+    try:
         async with httpx.AsyncClient(timeout=30.0) as client:
             logger.info(f"create_session -> POST {url} payload={body}")
             resp = await client.post(url, json=body)
-
-        result: Dict[str, Any]
-        result = resp.json()
     except Exception as e:
         logger.error(f"create_session connect error: {e}")
+        return {"status": 503, "code": "CONNECTION_ERROR", "message": str(e)}
+
+    try:
+        result: Dict[str, Any]
+        result = resp.json()
+    except Exception:
         return {"status": resp.status_code, "code": "HTTP_ERROR", "message": resp.text}
     
     # Normalize potential stringified JSON in the 'message' field from the API
