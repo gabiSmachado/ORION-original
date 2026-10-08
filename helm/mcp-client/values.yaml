@@ -54,7 +54,7 @@ config:
     port: 8090
   llm:
     name: "qwen"
-    model: "qwen3-235b-a22b-2507"
+    model: "qwen3-30b-a3b-instruct-2507"
 
   results_path: "/app"
 

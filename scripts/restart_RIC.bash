@@ -43,6 +43,12 @@ kubectl scale statefulset informationservice --replicas=0 -n nonrtric &
 kubectl delete pvc informationservice-vardata-informationservice-0 -n nonrtric &
 kubectl scale statefulset policymanagementservice --replicas=0 -n nonrtric 
 
+echo "Scaling intent process to 0..." &&
+kubectl scale deployment frontend --replicas=0 -n frontend &
+kubectl scale deployment mcp-client --replicas=0 -n smo &
+kubectl scale deployment mcp-server --replicas=0 -n smo &
+kubectl scale deployment rapp --replicas=0 -n ricrapp
+
 echo "Waiting for all pods to terminate..."
 sleep 60
 
@@ -80,7 +86,11 @@ kubectl scale statefulset helmmanager --replicas=1 -n nonrtric &
 kubectl scale statefulset informationservice --replicas=1 -n nonrtric &
 kubectl scale statefulset policymanagementservice --replicas=1 -n nonrtric
 
-
+echo "Scaling intent process to 1..." &&
+kubectl scale deployment frontend --replicas=1 -n frontend &
+kubectl scale deployment mcp-client --replicas=1 -n smo &
+kubectl scale deployment mcp-server --replicas=1 -n smo &
+kubectl scale deployment rapp --replicas=1 -n ricrapp
 
 echo "Waiting for Near-RT RIC e2term deployment to be ready..." 
 kubectl wait --for=condition=available deployment/deployment-ricplt-e2term-alpha -n ricplt --timeout=200s
